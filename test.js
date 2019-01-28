@@ -12,6 +12,13 @@ document.addEventListener("DOMContentLoaded", function(event)
     $("ul.navbar-nav").before( '<i class="fa fa-bars 222" aria-hidden="true" class="menu-button" onclick="callback(\'bar\');"></i>' );
 });
 
+$(document).ready(function () {
+    alert('33');
+});
+
+(function($) {
+    alert('44');
+})(jQuery);
 
 function callback(parameter)
 {
