@@ -4,6 +4,11 @@ jQuery(document).ready(function($)
     $("ul.navbar-nav").before( '<i class="fa fa-bars" aria-hidden="true" class="menu-button" onclick="callback(\'bar\');"></i>' );
 });
 
+document.addEventListener("DOMContentLoaded", function(event)
+{
+    $("head").append("<link id='fromScript2' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
+    $("ul.navbar-nav").before( '<i class="fa fa-bars 222" aria-hidden="true" class="menu-button" onclick="callback(\'bar\');"></i>' );
+});
 
 
 function callback(parameter)
