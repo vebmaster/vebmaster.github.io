@@ -1,8 +1,12 @@
+.flex-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
 ul.footer_class {
   list-style: none;
-  width: 25%;
   text-align: left;
-  float: left;
   padding: 0px 0px 0px 0px;
   font-weight: 300;
   font-size: 20px;
@@ -10,7 +14,7 @@ ul.footer_class {
 }
 ul.footer_class li {
   list-style: none;
-  padding: 0px 36px 0px 0px;
+  padding: 0px 20px 0px 0px;
   margin: 0px 0px 10px 0px;
 }
 ul.footer_class li a {
@@ -21,7 +25,7 @@ ul.footer_class li a:hover {
   color: #d57787;
 }
 ul.footer_class ul {
-  padding: 16px 0px 0px 36px;
+  padding: 16px 0px 0px 0px;
   font-size: 16px;
   font-weight: 300;
 }
@@ -38,3 +42,11 @@ ul.footer_class ul li a {
   clear: both;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
+  ul.footer_class {
+  }
+}
+@media only screen and (min-width: 1024px) {
+  ul.footer_class {
+  }
+}
