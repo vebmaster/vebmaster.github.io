@@ -84,8 +84,6 @@ jQuery(document).ready(function($)
                                 </li>
                             </ul>
         
-                            <div class="null"></div>
-                                
                         </div>
                 </div>
         </div><!--/#bar-->

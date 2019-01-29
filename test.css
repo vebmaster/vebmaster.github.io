@@ -3,6 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: stretch;
+  justify-content: space-between;
 }
 ul.footer_class {
   list-style: none;
