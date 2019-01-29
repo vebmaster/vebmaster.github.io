@@ -87,3 +87,14 @@ jQuery(document).ready(function($)
 </table>
 `);
 });
+
+
+function callback(parameter)
+{
+    var callback_tag = document.getElementById(parameter);
+    if (callback_tag.style.display == '') {
+        callback_tag.style.display = 'none';
+        return;
+    }
+    callback_tag.style.display = '';
+}
