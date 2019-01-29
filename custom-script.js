@@ -5,8 +5,8 @@ jQuery(document).ready(function($)
 
     $('body').append(`
 
-        <div style="display: none;
-                    position: absolute; 
+        <div style="display:none;
+                    position:absolute; 
                     top:0; 
                     left:0; 
                     right:0; 
@@ -97,10 +97,11 @@ jQuery(document).ready(function($)
 
 function callback(parameter)
 {
-    var callback_tag = document.getElementById(parameter);
-    if (callback_tag.style.display == '') {
-        callback_tag.style.display = 'none';
+    if ( $('#'+parameter).css('display') == 'none' ) {
+        $('#siteLayout').css("display", "none");
+        $('#'+parameter).css("display", "block");
         return;
     }
-    callback_tag.style.display = '';
+    $('#siteLayout').css("display", "block");
+    $('#'+parameter).css("display", "none");
 }
