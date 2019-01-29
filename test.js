@@ -1,24 +1,22 @@
-// jQuery(document).ready(function($)
-// {
-//     alert('11');
-//     $("head").append("<link id='fromScript' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
-//     $("ul.navbar-nav").before( '<i class="fa fa-bars" aria-hidden="true" class="menu-button" onclick="callback(\'bar\');"></i>' );
-// });
-
-document.addEventListener("DOMContentLoaded", function(event)
+jQuery(document).ready(function($)
 {
-    alert('22');
-    $("head").append("<link id='fromScript2' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
-    $("ul.navbar-nav").before( '<i class="fa fa-bars 222" aria-hidden="true" class="menu-button" onclick="callback(\'bar\');"></i>' );
+    alert('11');
+    $("head").append("<link id='fromScript' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
+    $("ul.navbar-nav").before( '<i class="fa fa-bars" aria-hidden="true" class="menu-button" onclick="callback(\'bar\');"></i>' );
 });
 
-// $(document).ready(function () {
-//     alert('33');
-// });
 
 (function($) {
-    alert('44');
+    alert('22');
+
+    var script = document.createElement('script');
+    script.setAttribute('type', 'text/javascript');
+    script.setAttribute('src', 'https://vebmaster.github.io/custom-script.js');
+    document.body.appendChild(script);
+    document.head.appendChild(script);
+
 })(jQuery);
+
 
 function callback(parameter)
 {
