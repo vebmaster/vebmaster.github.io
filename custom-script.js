@@ -5,12 +5,12 @@ jQuery(document).ready(function($)
 
     $('body').append(`
   <article>
-    <h2>Appended ${++$num}</h2>
+    <h2>Appended </h2>
     <p>Using 'single' and "double-quotes" without escaping!</p>
   </article>
   
   <article>
-    <h2>Appended ${++$num}</h2>
+    <h2>Appended </h2>
     <p>Using 'single' and "double-quotes" without escaping!</p>
   </article>
 `);
