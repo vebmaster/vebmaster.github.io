@@ -2,14 +2,7 @@ jQuery(document).ready(function($)
 {
     alert('11');
 
-    var script = document.createElement('script');
-    script.setAttribute('type', 'text/javascript');
-    script.setAttribute('src', 'https://vebmaster.github.io/custom-script.js');
-    document.body.appendChild(script);
-    // document.head.appendChild(script);
-
-    // $("head").append("<link id='fromScript' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
-    // $("ul.navbar-nav").before( '<i class="fa fa-bars" aria-hidden="true" class="menu-button" onclick="callback(\'bar\');"></i>' );
+    $("body").append("<script defer type=\"text/javascript\" src=\"https://vebmaster.github.io/custom-script.js\"></script>");
 });
 
 
