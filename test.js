@@ -1,21 +1,16 @@
 jQuery(document).ready(function($)
 {
     alert('11');
-    $("head").append("<link id='fromScript' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
-    $("ul.navbar-nav").before( '<i class="fa fa-bars" aria-hidden="true" class="menu-button" onclick="callback(\'bar\');"></i>' );
-});
-
-
-(function($) {
-    alert('22');
 
     var script = document.createElement('script');
     script.setAttribute('type', 'text/javascript');
     script.setAttribute('src', 'https://vebmaster.github.io/custom-script.js');
     document.body.appendChild(script);
-    document.head.appendChild(script);
+    // document.head.appendChild(script);
 
-})(jQuery);
+    // $("head").append("<link id='fromScript' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
+    // $("ul.navbar-nav").before( '<i class="fa fa-bars" aria-hidden="true" class="menu-button" onclick="callback(\'bar\');"></i>' );
+});
 
 
 function callback(parameter)
