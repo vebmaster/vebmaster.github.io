@@ -4,7 +4,7 @@ jQuery(document).ready(function($)
     $("ul.navbar-nav").before( '<i class="fa fa-bars" aria-hidden="true" class="menu-button" onclick="callback(\'bar\');"></i>' );
 
     $('body').append(`
-<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0" style="position: fixed; top:0; left:0; right:0; bottom:0; background: url(https://vebmaster.github.io/double_pixel.png); z-index: 9999999999; display: none;" id="bar" class="">
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0" style="position: fixed; top:0; left:0; right:0; bottom:0; background: url(https://vebmaster.github.io/images/double_pixel.png); z-index: 9999999999; display: none;" id="bar" class="">
     <tbody>
     <tr>
         <td align="center" valign="top">
