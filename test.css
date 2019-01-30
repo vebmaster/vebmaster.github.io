@@ -51,3 +51,40 @@ ul.footer_class ul li a {
   ul.footer_class {
   }
 }
+
+
+__body {
+  background: #818492;
+}
+
+.workspace {
+  __width: 1200px;
+  margin: 0px auto 0px auto;
+  position: relative;
+}
+#promotion .pro {
+  padding: 64px 0px 24px 0px;
+  position: relative;
+}
+.promotion_title {
+  color: #242424;
+  font-size: 2.2em;
+  margin: 0px 0px 44px 0px;
+  font-weight: 900;
+  text-align: center;
+}
+.lSSlideOuter .lSPager.lSpg>li.active a,.lSSlideOuter .lSPager.lSpg>li:hover a{background-color:#d57787}
+.lSSlideOuter .lSPager.lSpg>li a{background-color:#ebecf0;border-radius:30px;display:inline-block;height:12px;overflow:hidden;text-indent:-999em;width:12px;position:relative;z-index:99;-webkit-transition:all .5s linear 0s;transition:all .5s linear 0s}
+.lSSlideOuter {position: relative; z-index: 9;}
+.lSSlideOuter .lSPager.lSpg {margin:  20px 0px 44px 0px; position: relative; z-index: 9;}
+#promotion ul.slides li a {color: #ebecf0;}
+#promotion ul.slides li a div.cont {width: 340px; height: 340px; margin: 0px auto 0px auto; position: relative;}
+#promotion ul.slides li:hover a div.cont div.text {background: #242424; width: 300px; position: absolute; bottom: 20px; left: 20px; -webkit-transform: translateY(0);transform: translateY(0);}
+#promotion ul.slides li a div.cont div.text div.inner {padding: 16px; text-align: center;}
+#promotion ul.slides li a div.cont div.text {background: #242424; width: 300px; position: absolute; bottom: 20px; left: 20px; -webkit-transform:translateY(110px);transform:translateY(110px); -webkit-transition:.4s;transition:.4s}
+#promotionx ul.slides li a {color: #ebecf0;}
+#promotionx ul.slides li a div.cont {width: 340px; height: 340px; margin: 0px auto 0px auto; position: relative;}
+#promotionx ul.slides li:hover a div.cont div.text {background: #242424; width: 300px; position: absolute; bottom: 20px; left: 20px; -webkit-transform: translateY(0);transform: translateY(0);}
+#promotionx ul.slides li a div.cont div.text div.inner {padding: 16px; text-align: center;}
+#promotionx ul.slides li a div.cont div.text {background: #242424; width: 300px; position: absolute; bottom: 20px; left: 20px; -webkit-transform:translateY(110px);transform:translateY(110px); -webkit-transition:.4s;transition:.4s}
+.border-pro {border: 2px solid #FFF; width: 300px; height: 300px;}
