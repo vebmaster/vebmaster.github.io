@@ -2,6 +2,10 @@ jQuery(document).ready(function($)
 {
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
 
+    if ($('#bgCover').css('background-image') != 'none') {
+        alert('bgCover = background image');
+    }
+
     addMenu();
     addSlider();
 
