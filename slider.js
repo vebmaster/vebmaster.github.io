@@ -115,17 +115,47 @@ $('#userBlockId527668').before(`
                 </div>
             </div>
         </div>
-    `);
+`);
 
+// $(document).ready(function() {
+//     $("body").append(`
+//         <script>
+//         $("#promotion .slides").lightSlider({
+//             loop:true,
+//             keyPress:true
+//         });
+//         </script>
+//     `);
+// });
 
+$(document).ready(function(){
 
-$(document).ready(function() {
-    $("body").append(`
-        <script>
-        $("#promotion .slides").lightSlider({
-            loop:true,
-            keyPress:true
+    if(document.getElementById('promotion')){
+
+        var superwidth = $(window).width();
+        if(superwidth <= 500) {
+            var sur = 1;
+        } else {
+            var sur = 3;
+        }
+
+        var promotion = $('#promotion .slides').lightSlider({
+            item: sur,
+            loop: true,
+            auto: true,
+            speed: 1000,
+            pause: 10000,
+            pager: true,
+            enableTouch: true,
+            enableDrag: true,
+            galleryMargin: 0,
+            controls: false
         });
-        </script>
-    `);
+        $('#promotion .prev').click(function(e){
+            promotion.goToPrevSlide();
+        });
+        $('#promotion .next').click(function(e){
+            promotion.goToNextSlide();
+        });
+    }
 });
