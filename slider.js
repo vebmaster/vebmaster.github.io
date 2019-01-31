@@ -11,7 +11,7 @@ $('#userBlockId527668').before(`
                             <ul class="slides lightSlider lSSlide lsGrab" style="width: 8873.33px; transform: translate3d(-4840px, 0px, 0px); height: 340px; padding-bottom: 0%;">
                                 <li>
                                     <a href="/specialnye-predlozheniya/paryaschie/">
-                                        <div class="cont" style="background: url(images/test1.jpg) center no-repeat; background-size: cover;">
+                                        <div class="cont" style="background: url(https://vebmaster.github.io/images/test1.jpg) center no-repeat; background-size: cover;">
         
                                             <div style="padding: 18px;">
                                                 <div class="border-pro">
@@ -31,7 +31,7 @@ $('#userBlockId527668').before(`
                                 </li>
                                 <li>
                                     <a href="/specialnye-predlozheniya/paryaschie/">
-                                        <div class="cont" style="background: url(images/test2.jpg) center no-repeat; background-size: cover;">
+                                        <div class="cont" style="background: url(https://vebmaster.github.io/images/test2.jpg) center no-repeat; background-size: cover;">
         
                                             <div style="padding: 18px;">
                                                 <div class="border-pro">
@@ -51,7 +51,7 @@ $('#userBlockId527668').before(`
                                 </li>
                                 <li>
                                     <a href="/specialnye-predlozheniya/paryaschie/">
-                                        <div class="cont" style="background: url(images/test3.jpg) center no-repeat; background-size: cover;">
+                                        <div class="cont" style="background: url(https://vebmaster.github.io/images/test3.jpg) center no-repeat; background-size: cover;">
         
                                             <div style="padding: 18px;">
                                                 <div class="border-pro">
@@ -71,7 +71,7 @@ $('#userBlockId527668').before(`
                                 </li>
                                 <li>
                                     <a href="/specialnye-predlozheniya/paryaschie/">
-                                        <div class="cont" style="background: url(images/test4.jpg) center no-repeat; background-size: cover;">
+                                        <div class="cont" style="background: url(https://vebmaster.github.io/images/test4.jpg) center no-repeat; background-size: cover;">
         
                                             <div style="padding: 18px;">
                                                 <div class="border-pro">
@@ -91,7 +91,7 @@ $('#userBlockId527668').before(`
                                 </li>
                                 <li>
                                     <a href="/specialnye-predlozheniya/paryaschie/">
-                                        <div class="cont" style="background: url(images/test5.jpg) center no-repeat; background-size: cover;">
+                                        <div class="cont" style="background: url(https://vebmaster.github.io/images/test5.jpg) center no-repeat; background-size: cover;">
         
                                             <div style="padding: 18px;">
                                                 <div class="border-pro">
