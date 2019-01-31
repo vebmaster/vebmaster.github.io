@@ -94,7 +94,7 @@ __body {
 #promotionx ul.slides li:hover a div.cont div.text {background: #242424; width: 300px; position: absolute; bottom: 24px; left: 20px; -webkit-transform: translateY(0);transform: translateY(0);}
 #promotionx ul.slides li a div.cont div.text div.inner {padding: 16px; text-align: center;}
 #promotionx ul.slides li a div.cont div.text {background: #242424; width: 300px; position: absolute; bottom: 20px; left: 20px; -webkit-transform:translateY(110px);transform:translateY(110px); -webkit-transition:.4s;transition:.4s}
-.border-pro {border: 2px solid #FFF; __width: 300px; height: 300px;}
+.border-pro {__border: 2px solid #FFF; width: 300px; height: 300px;}
 .prev, .next {
     z-index: 10;
 }
