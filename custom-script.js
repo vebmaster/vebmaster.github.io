@@ -147,7 +147,13 @@ function addMenu()
 function addSlider()
 {
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/lightslider/css/lightslider.css' type='text/css'>");
-    $("body").append("<script type='text/javascript' src='https://vebmaster.github.io/lightslider/js/lightslider.js'></script>");
+    // $("body").append("<script type='text/javascript' src='https://vebmaster.github.io/lightslider/js/lightslider.js'></script>");
+
+    $.holdReady( true );
+    $.getScript( "https://vebmaster.github.io/lightslider/js/lightslider.js", function() {
+        $.holdReady( false );
+    });
+
     $("body").append("<script type='text/javascript' src='https://vebmaster.github.io/slider.js'></script>");
 }
 // addSlider()
