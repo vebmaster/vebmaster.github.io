@@ -1140,7 +1140,6 @@
 }(jQuery));
 
 
-
 $(document).ready(function()
 {
     if(document.getElementById('promotion')){

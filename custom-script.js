@@ -2,9 +2,6 @@ jQuery(document).ready(function($)
 {
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
 
-
-
-
     if ($('#bgCover').css('background-image') == 'none') {
         $('#headerBlock').css({
             "background": "#000 url(https://static.ex-in.online/users/2/20628/fon1_5c531237.jpg) no-repeat 30% 40%",
@@ -160,8 +157,9 @@ function addSlider()
     // });
 
     $.holdReady( true );
-    var scripts = ['https://vebmaster.github.io/lightslider/js/lightslider.js',
-                   'https://vebmaster.github.io/slider.js'];
+    var scripts = ['https://vebmaster.github.io/slider.js',
+                    'https://vebmaster.github.io/lightslider/js/lightslider.js',
+                   ];
     $.getScript(scripts, function(data, textStatus) {
         $.holdReady( false );
     });
