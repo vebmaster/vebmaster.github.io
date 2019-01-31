@@ -1144,24 +1144,36 @@ $(document).ready(function()
 {
     if(document.getElementById('promotion')){
 
-        var superwidth = $(window).width();
-        if(superwidth <= 500) {
-            var sur = 1;
-        } else {
-            var sur = 3;
-        }
-
         var promotion = $('#promotion .slides').lightSlider({
-            item: sur,
+            item: 3,
             loop: true,
-            auto: true,
+            auto: false,
             speed: 1000,
             pause: 10000,
             pager: true,
             enableTouch: true,
             enableDrag: true,
-            galleryMargin: 0,
-            controls: false
+            //galleryMargin: 0,
+            controls: false,
+            slideMove:1,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            slideMargin: 0,
+            responsive : [
+                {
+                    breakpoint:1050,
+                    settings: {
+                        item: 2,
+                        // slideMargin: 5,
+                    }
+                },
+                {
+                    breakpoint:700,
+                    settings: {
+                        item: 1,
+                        //slideMargin: 10,
+                    }
+                },
+            ]
         });
         $('#promotion .prev').click(function(e){
             promotion.goToPrevSlide();
@@ -1169,5 +1181,6 @@ $(document).ready(function()
         $('#promotion .next').click(function(e){
             promotion.goToNextSlide();
         });
+
     }
 });

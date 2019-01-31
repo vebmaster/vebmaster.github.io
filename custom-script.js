@@ -2,6 +2,14 @@ jQuery(document).ready(function($)
 {
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
 
+    headerBackground();
+    addMenu();
+    addSlider();
+});
+
+
+function headerBackground()
+{
     if ($('#bgCover').css('background-image') == 'none') {
         $('#headerBlock').css({
             "background": "#000 url(https://static.ex-in.online/users/2/20628/fon1_5c531237.jpg) no-repeat 30% 40%",
@@ -9,11 +17,8 @@ jQuery(document).ready(function($)
             "padding-bottom": "30px",
         });
     }
-
-    addMenu();
-    addSlider();
-
-});
+}
+// headerBackground()
 
 
 function callback(parameter)
@@ -26,6 +31,7 @@ function callback(parameter)
     $('#siteLayout').css("display", "block");
     $('#'+parameter).css("display", "none");
 }
+// callback(parameter)
 
 
 function addMenu()
@@ -151,11 +157,6 @@ function addSlider()
         cache: true
     });
 
-    // $.holdReady( true );
-    // $.getScript( "https://vebmaster.github.io/lightslider/js/lightslider.js", function() {
-    //     $.holdReady( false );
-    // });
-
     $.holdReady( true );
     var scripts = ['https://vebmaster.github.io/slider.js',
                     'https://vebmaster.github.io/lightslider/js/lightslider.js',
@@ -163,7 +164,5 @@ function addSlider()
     $.getScript(scripts, function(data, textStatus) {
         $.holdReady( false );
     });
-
-    // $("body").append("<script type='text/javascript' src='https://vebmaster.github.io/slider.js'></script>");
 }
 // addSlider()
