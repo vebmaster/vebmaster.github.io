@@ -1,11 +1,12 @@
-
-$('#userBlockId527668').before(`
+jQuery(document).ready(function($)
+{
+    $('#userBlockId527668').before(`
         <div id="promotion" style="width: 100%; margin: 0px 0px 0px 0px;">
             <div class="workspace">
                 <div class="pro">
                     <div class="promotion_title bounceIn animated wow animated" style="visibility: visible; animation-name: bounceIn;">Наши специальные предложения</div>
-                    <i class="fa fa-chevron-circle-left prev" style="color: #d57787; font-size: 64px; cursor: pointer; position: absolute; top: 300px; left: -46px;" aria-hidden="true"></i>
-                    <i class="fa fa-chevron-circle-right next" style="color: #d57787; font-size: 64px; cursor: pointer; position: absolute; top: 300px; right: -46px;" aria-hidden="true"></i>
+                    <i class="fa fa-chevron-circle-left prev" style="color: #a9a9a9; font-size: 64px; cursor: pointer; position: absolute; top: 300px; left: -46px;" aria-hidden="true"></i>
+                    <i class="fa fa-chevron-circle-right next" style="color: #a9a9a9; font-size: 64px; cursor: pointer; position: absolute; top: 300px; right: -46px;" aria-hidden="true"></i>
                     <div class="lSSlideOuter">
                         <div class="lSSlideWrapper usingCss" style="transition-duration: 1000ms; transition-timing-function: ease;">
                             <ul class="slides lightSlider lSSlide lsGrab" style="width: 8873.33px; transform: translate3d(-4840px, 0px, 0px); height: 340px; padding-bottom: 0%;">
@@ -115,4 +116,6 @@ $('#userBlockId527668').before(`
                 </div>
             </div>
         </div>
-`);
+    `);
+});
+
