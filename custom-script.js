@@ -3,7 +3,14 @@ jQuery(document).ready(function($)
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
 
     if ($('#bgCover').css('background-image') != 'none') {
+
         alert('bgCover = background image');
+
+        $('#headerBlock').css({
+            "background": "#000 url(https://static.ex-in.online/users/2/20628/fon1_5c531237.jpg) no-repeat 30% 40%",
+            "padding-top": "30px",
+            "padding-bottom": "30px",
+        });
     }
 
     addMenu();
