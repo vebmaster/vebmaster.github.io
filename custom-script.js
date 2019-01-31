@@ -4,6 +4,45 @@ jQuery(document).ready(function($)
 
     addMenu();
     addSlider();
+
+
+    $(document).ready(function(){
+
+        // $("#promotion .slides").lightSlider({
+        //     loop:true,
+        //     keyPress:true
+        // });
+
+        // if(document.getElementById('promotion')){
+        //
+        //     var superwidth = $(window).width();
+        //     if(superwidth <= 500) {
+        //         var sur = 1;
+        //     } else {
+        //         var sur = 3;
+        //     }
+        //
+        //     var promotion = $('#promotion .slides').lightSlider({
+        //         item: sur,
+        //         loop: true,
+        //         auto: true,
+        //         speed: 1000,
+        //         pause: 10000,
+        //         pager: true,
+        //         enableTouch: true,
+        //         enableDrag: true,
+        //         galleryMargin: 0,
+        //         controls: false
+        //     });
+        //     $('#promotion .prev').click(function(e){
+        //         promotion.goToPrevSlide();
+        //     });
+        //     $('#promotion .next').click(function(e){
+        //         promotion.goToNextSlide();
+        //     });
+        // }
+    });
+
 });
 
 
@@ -17,6 +56,18 @@ function callback(parameter)
     $('#siteLayout').css("display", "block");
     $('#'+parameter).css("display", "none");
 }
+
+
+var loadJS = function(url, implementationCode, location){
+    //url is URL of external file, implementationCode is the code
+    //to be called from the file, location is the location to
+    //insert the <script> element
+    var scriptTag = document.createElement('script');
+    scriptTag.src = url;
+    scriptTag.onload = implementationCode;
+    scriptTag.onreadystatechange = implementationCode;
+    location.appendChild(scriptTag);
+};
 
 
 function addMenu()
@@ -112,8 +163,13 @@ function addMenu()
 
 function addSlider()
 {
-    $("body").append("<script src='https://vebmaster.github.io/lightslider/js/lightslider.js'></script>");
+    $("body").append("<script defer type='text/javascript' src='https://vebmaster.github.io/lightslider/js/lightslider.js'></script>");
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/lightslider/css/lightslider.css' type='text/css'>");
+
+    var yourCodeToBeCalled = function(){
+        alert('load');
+    }
+    // loadJS('https://vebmaster.github.io/lightslider/js/lightslider.js', yourCodeToBeCalled, document.body);
 
     $('#userBlockId527668').before(`
         <div id="promotion" style="width: 100%; margin: 0px 0px 0px 0px;">
@@ -233,35 +289,17 @@ function addSlider()
         </div>
     `);
 
+    // $("body").append(`
+    //     <script>
+    //     $("#promotion .slides").lightSlider({
+    //         loop:true,
+    //         keyPress:true
+    //     });
+    //     </script>
+    // `);
+
     $(document).ready(function() {
-        if(document.getElementById('promotion')){
 
-            var superwidth = $(window).width();
-            if(superwidth <= 500) {
-                var sur = 1;
-            } else {
-                var sur = 3;
-            }
-
-            var promotion = $('#promotion .slides').lightSlider({
-                item: sur,
-                loop: true,
-                auto: true,
-                speed: 1000,
-                pause: 10000,
-                pager: true,
-                enableTouch: true,
-                enableDrag: true,
-                galleryMargin: 0,
-                controls: false
-            });
-            $('#promotion .prev').click(function(e){
-                promotion.goToPrevSlide();
-            });
-            $('#promotion .next').click(function(e){
-                promotion.goToNextSlide();
-            });
-        }
     });
 }
 // addSlider()

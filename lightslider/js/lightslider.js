@@ -1138,3 +1138,8 @@
         return this;
     };
 }(jQuery));
+
+$("#promotion .slides").lightSlider({
+    loop:true,
+    keyPress:true
+});
