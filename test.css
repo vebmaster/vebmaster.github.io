@@ -58,7 +58,7 @@ __body {
 }
 
 .workspace {
-  __width: 1200px;
+  width: 1200px;
   margin: 0px auto 0px auto;
   position: relative;
 }

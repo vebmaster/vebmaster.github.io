@@ -5,39 +5,6 @@ jQuery(document).ready(function($)
     addMenu();
     addSlider();
 
-
-    $(document).ready(function(){
-
-        // if(document.getElementById('promotion')){
-        //
-        //     var superwidth = $(window).width();
-        //     if(superwidth <= 500) {
-        //         var sur = 1;
-        //     } else {
-        //         var sur = 3;
-        //     }
-        //
-        //     var promotion = $('#promotion .slides').lightSlider({
-        //         item: sur,
-        //         loop: true,
-        //         auto: true,
-        //         speed: 1000,
-        //         pause: 10000,
-        //         pager: true,
-        //         enableTouch: true,
-        //         enableDrag: true,
-        //         galleryMargin: 0,
-        //         controls: false
-        //     });
-        //     $('#promotion .prev').click(function(e){
-        //         promotion.goToPrevSlide();
-        //     });
-        //     $('#promotion .next').click(function(e){
-        //         promotion.goToNextSlide();
-        //     });
-        // }
-    });
-
 });
 
 
@@ -148,6 +115,10 @@ function addSlider()
 {
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/lightslider/css/lightslider.css' type='text/css'>");
     // $("body").append("<script type='text/javascript' src='https://vebmaster.github.io/lightslider/js/lightslider.js'></script>");
+
+    $.ajaxSetup({
+        cache: true
+    });
 
     $.holdReady( true );
     $.getScript( "https://vebmaster.github.io/lightslider/js/lightslider.js", function() {
