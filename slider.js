@@ -117,15 +117,15 @@ $('#userBlockId527668').before(`
         </div>
     `);
 
-$("body").append(`
-    <script>
-    $("#promotion .slides").lightSlider({
-        loop:true,
-        keyPress:true
-    });
-    </script>
-`);
+
 
 $(document).ready(function() {
-
+    $("body").append(`
+        <script>
+        $("#promotion .slides").lightSlider({
+            loop:true,
+            keyPress:true
+        });
+        </script>
+    `);
 });
