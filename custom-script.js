@@ -2,6 +2,9 @@ jQuery(document).ready(function($)
 {
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
 
+
+
+
     if ($('#bgCover').css('background-image') == 'none') {
         $('#headerBlock').css({
             "background": "#000 url(https://static.ex-in.online/users/2/20628/fon1_5c531237.jpg) no-repeat 30% 40%",
@@ -119,6 +122,30 @@ function addMenu()
 }
 // addMenu()
 
+
+/* enhance $.getSctipt to handle mutiple scripts */
+var getScript = jQuery.getScript;
+jQuery.getScript = function( resources, callback )
+{
+    var // reference declaration & localization
+        length = resources.length,
+        handler = function() { counter++; },
+        deferreds = [],
+        counter = 0,
+        idx = 0;
+
+    for ( ; idx < length; idx++ ) {
+        deferreds.push(
+            getScript( resources[ idx ], handler )
+        );
+    }
+
+    jQuery.when.apply( null, deferreds ).then(function() {
+        callback && callback();
+    });
+};
+
+
 function addSlider()
 {
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/lightslider/css/lightslider.css' type='text/css'>");
@@ -127,11 +154,18 @@ function addSlider()
         cache: true
     });
 
+    // $.holdReady( true );
+    // $.getScript( "https://vebmaster.github.io/lightslider/js/lightslider.js", function() {
+    //     $.holdReady( false );
+    // });
+
     $.holdReady( true );
-    $.getScript( "https://vebmaster.github.io/lightslider/js/lightslider.js", function() {
+    var scripts = ['https://vebmaster.github.io/lightslider/js/lightslider.js',
+                   'https://vebmaster.github.io/slider.js'];
+    $.getScript(scripts, function(data, textStatus) {
         $.holdReady( false );
     });
 
-    $("body").append("<script type='text/javascript' src='https://vebmaster.github.io/slider.js'></script>");
+    // $("body").append("<script type='text/javascript' src='https://vebmaster.github.io/slider.js'></script>");
 }
 // addSlider()
