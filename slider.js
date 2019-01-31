@@ -115,12 +115,6 @@ $('#userBlockId527668').before(`
                 </div>
             </div>
         </div>
-        <script>
-        $("#promotion .slides").lightSlider({
-            loop:true,
-            keyPress:true
-        });
-        </script>
 `);
 
 // $(document).ready(function() {

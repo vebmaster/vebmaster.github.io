@@ -1138,3 +1138,35 @@
         return this;
     };
 }(jQuery));
+
+$(document).ready(function()
+{
+    if(document.getElementById('promotion')){
+
+        var superwidth = $(window).width();
+        if(superwidth <= 500) {
+            var sur = 1;
+        } else {
+            var sur = 3;
+        }
+
+        var promotion = $('#promotion .slides').lightSlider({
+            item: sur,
+            loop: true,
+            auto: true,
+            speed: 1000,
+            pause: 10000,
+            pager: true,
+            enableTouch: true,
+            enableDrag: true,
+            galleryMargin: 0,
+            controls: false
+        });
+        $('#promotion .prev').click(function(e){
+            promotion.goToPrevSlide();
+        });
+        $('#promotion .next').click(function(e){
+            promotion.goToNextSlide();
+        });
+    }
+});
