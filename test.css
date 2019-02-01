@@ -103,14 +103,15 @@ __body {
     background: #000;
 }
 
-#userBlockId533900 span,
-#userBlockId533900 a {
-    color: #696969;
-}
-
 /* Footer MY */
 #userBlockId534004 {
     background: #292929;
+}
+#userBlockId534004 .text {
+    color: #696969;
+}
+.soc_icon {
+    margin-top: 10px;
 }
 .soc_icon img {
     width: 40px;
