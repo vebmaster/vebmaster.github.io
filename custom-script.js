@@ -137,26 +137,56 @@ function addSlider()
     });
 
     var d1 = new Date();
-    console.log("1: " + d1.toLocaleString());
-    console.log("1: " + d1.getTime());
+    console.log("START: " + d1.toLocaleString());
+    console.log("START: " + d1.getTime());
 
-    $.getScript("https://vebmaster.github.io/slider.js").done(function(script, textStatus, jqxhr) {
-        if (jqxhr.status == 200 || jqxhr.status == 304) {
-            var d3 = new Date();
-            console.log("slider.js done: " + d3.toLocaleString());
-            console.log("slider.js done: " + d3.getTime());
-            $.getScript("https://vebmaster.github.io/lightslider/js/lightslider.js").done(function(script, textStatus, jqxhr) {
-                var d4 = new Date();
-                console.log("lightslider done: " + d4.toLocaleString());
-                console.log("lightslider done: " + d4.getTime());
-            });
-        } else {
-            console.log("Error slider.js! not 200 = " + jqxhr.status);
+    // $.getScript("https://vebmaster.github.io/slider.js").done(function(script, textStatus, jqxhr) {
+    //     if (jqxhr.status == 200 || jqxhr.status == 304) {
+    //         var d3 = new Date();
+    //         console.log("slider.js done: " + d3.toLocaleString());
+    //         console.log("slider.js done: " + d3.getTime());
+    //         $.getScript("https://vebmaster.github.io/lightslider/js/lightslider.js").done(function(script, textStatus, jqxhr) {
+    //             var d4 = new Date();
+    //             console.log("lightslider done: " + d4.toLocaleString());
+    //             console.log("lightslider done: " + d4.getTime());
+    //         });
+    //     } else {
+    //         console.log("Error slider.js! not 200 = " + jqxhr.status);
+    //     }
+    // });
+
+    // $.ajax('https://vebmaster.github.io/slider.js')
+    // .then(function(result){
+    //     console.log("done 1");
+    //     var d3 = new Date();
+    //     console.log("slider.js done: " + d3.toLocaleString());
+    //     console.log("slider.js done: " + d3.getTime());
+    //     return $.ajax('https://vebmaster.github.io/lightslider/js/lightslider.js')
+    // }).then(function(result){
+    //     console.log("done 2");
+    //     var d4 = new Date();
+    //     console.log("lightslider done: " + d4.toLocaleString());
+    //     console.log("lightslider done: " + d4.getTime());
+    // });
+
+    $.ajax('https://vebmaster.github.io/slider.js').then(
+        function(){
+            console.log('OK 1');
+            return $.ajax('https://vebmaster.github.io/lightslider/js/lightslider.js');
+        }, function(){
+            console.log('slider.js not found');
+            return $.Deferred();
         }
-    });
+    ).then(
+        function(){
+            console.log('OK 2');
+        }, function(){
+            console.log('lightslider.js not found');
+        }
+    );
 
     var d2 = new Date();
-    console.log("2: " + d2.toLocaleString());
-    console.log("2: " + d2.getTime());
+    console.log("END: " + d2.toLocaleString());
+    console.log("END: " + d2.getTime());
 }
 // addSlider()
