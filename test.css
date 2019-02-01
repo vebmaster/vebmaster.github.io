@@ -112,3 +112,10 @@ __body {
 #userBlockId534004 {
     background: #292929;
 }
+.soc_icon img {
+    width: 40px;
+    height: 40px;
+}
+.soc_icon a {
+    margin-right: 10px;
+}
