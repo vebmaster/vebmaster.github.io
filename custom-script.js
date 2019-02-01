@@ -126,43 +126,6 @@ function addMenu()
 // addMenu()
 
 
-/* enhance $.getSctipt to handle mutiple scripts */
-// var getScript = jQuery.getScript;
-// jQuery.getScript = function( resources, callback )
-// {
-//     var // reference declaration & localization
-//         length = resources.length,
-//         handler = function() { counter++; },
-//         deferreds = [],
-//         counter = 0,
-//         idx = 0;
-//
-//     for ( ; idx < length; idx++ ) {
-//         deferreds.push(
-//             getScript( resources[ idx ], handler )
-//         );
-//     }
-//
-//     jQuery.when.apply( null, deferreds ).then(function() {
-//         callback && callback();
-//     });
-// };
-
-function loadScripts(arrayScripts)
-{
-    var length = arrayScripts.length,
-        idx = 0;
-    for ( ; idx < length; idx++ ) {
-        $.holdReady( true );
-        $.getScript( arrayScripts[idx], function() {
-            $.holdReady( false );
-            setTimeout(function(){alert("hi")}, 5000);
-        });
-    }
-}
-// loadScripts(arrayScripts)
-
-
 function addSlider()
 {
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/lightslider/css/lightslider.css' type='text/css'>");
@@ -171,68 +134,57 @@ function addSlider()
         cache: true
     });
 
-    // $.holdReady( true );
-    var scripts = ['https://vebmaster.github.io/slider.js',
-                    'https://vebmaster.github.io/lightslider/js/lightslider.js',
-                   ];
-    // $.getScript(scripts, function(data, textStatus) {
-    //     $.holdReady( false );
-    // });
-
-    // loadScripts(scripts);
     $.getScript("https://vebmaster.github.io/slider.js").done(function(script, textStatus, jqxhr) {
-        console.log("finished1 = " + textStatus);
-        console.log("finished1 = " + jqxhr.status ); // 200
-
-        $.getScript("https://vebmaster.github.io/lightslider/js/lightslider.js").done(function(script, textStatus, jqxhr) {
-            console.log("finished2 = " + textStatus);
-            console.log("finished2 = " + jqxhr.status ); // 200
-        });
+        if (jqxhr.status == 200) {
+            $.getScript("https://vebmaster.github.io/lightslider/js/lightslider.js").done(function(script, textStatus, jqxhr) {});
+        } else {
+            console.log("Error slider.js! not 200 = " + jqxhr.status);
+        }
     });
 
-    // $(document).ready(function()
-    // {
-    //     if(document.getElementById('promotion')){
-    //
-    //         var promotion = $('#promotion .slides').lightSlider({
-    //             item: 3,
-    //             loop: true,
-    //             auto: false,
-    //             speed: 1000,
-    //             pause: 10000,
-    //             pager: true,
-    //             enableTouch: true,
-    //             enableDrag: true,
-    //             //galleryMargin: 0,
-    //             controls: false,
-    //             slideMove:1,
-    //             easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-    //             slideMargin: 0,
-    //             responsive : [
-    //                 {
-    //                     breakpoint:1050,
-    //                     settings: {
-    //                         item: 2,
-    //                         // slideMargin: 5,
-    //                     }
-    //                 },
-    //                 {
-    //                     breakpoint:700,
-    //                     settings: {
-    //                         item: 1,
-    //                         //slideMargin: 10,
-    //                     }
-    //                 },
-    //             ]
-    //         });
-    //         $('#promotion .prev').click(function(e){
-    //             promotion.goToPrevSlide();
-    //         });
-    //         $('#promotion .next').click(function(e){
-    //             promotion.goToNextSlide();
-    //         });
-    //
-    //     }
-    // });
+    $(document).ready(function()
+    {
+        if(document.getElementById('promotion')){
+
+            var promotion = $('#promotion .slides').lightSlider({
+                item: 3,
+                loop: true,
+                auto: false,
+                speed: 1000,
+                pause: 10000,
+                pager: true,
+                enableTouch: true,
+                enableDrag: true,
+                //galleryMargin: 0,
+                controls: false,
+                slideMove:1,
+                easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+                slideMargin: 0,
+                responsive : [
+                    {
+                        breakpoint:1050,
+                        settings: {
+                            item: 2,
+                            // slideMargin: 5,
+                        }
+                    },
+                    {
+                        breakpoint:700,
+                        settings: {
+                            item: 1,
+                            //slideMargin: 10,
+                        }
+                    },
+                ]
+            });
+            $('#promotion .prev').click(function(e){
+                promotion.goToPrevSlide();
+            });
+            $('#promotion .next').click(function(e){
+                promotion.goToNextSlide();
+            });
+
+        }
+    });
 }
 // addSlider()
