@@ -125,3 +125,10 @@ __body {
 .soc_icon a {
     margin-right: 10px;
 }
+ul.about {
+    margin-left: 0;
+    padding-left: 0;
+}
+ul.about li {
+    list-style-type: none;
+}
