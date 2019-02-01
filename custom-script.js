@@ -136,44 +136,13 @@ function addSlider()
         cache: true
     });
 
-    var d1 = new Date();
-    console.log("START: " + d1.toLocaleString());
-    console.log("START: " + d1.getTime());
-
-    // $.getScript("https://vebmaster.github.io/slider.js").done(function(script, textStatus, jqxhr) {
-    //     if (jqxhr.status == 200 || jqxhr.status == 304) {
-    //         var d3 = new Date();
-    //         console.log("slider.js done: " + d3.toLocaleString());
-    //         console.log("slider.js done: " + d3.getTime());
-    //         $.getScript("https://vebmaster.github.io/lightslider/js/lightslider.js").done(function(script, textStatus, jqxhr) {
-    //             var d4 = new Date();
-    //             console.log("lightslider done: " + d4.toLocaleString());
-    //             console.log("lightslider done: " + d4.getTime());
-    //         });
-    //     } else {
-    //         console.log("Error slider.js! not 200 = " + jqxhr.status);
-    //     }
-    // });
-
-    // $.ajax('https://vebmaster.github.io/slider.js')
-    // .then(function(result){
-    //     console.log("done 1");
-    //     var d3 = new Date();
-    //     console.log("slider.js done: " + d3.toLocaleString());
-    //     console.log("slider.js done: " + d3.getTime());
-    //     return $.ajax('https://vebmaster.github.io/lightslider/js/lightslider.js')
-    // }).then(function(result){
-    //     console.log("done 2");
-    //     var d4 = new Date();
-    //     console.log("lightslider done: " + d4.toLocaleString());
-    //     console.log("lightslider done: " + d4.getTime());
-    // });
-
-    $.getScript('https://vebmaster.github.io/slider.js1').then(
+    $.getScript('https://vebmaster.github.io/slider.js')
+    .then(
         function(){
             console.log('OK 1');
             return $.getScript('https://vebmaster.github.io/lightslider/js/lightslider.js');
-        }, function(){
+        },
+        function(){
             console.log('slider.js not found');
             return $.Deferred();
         }
@@ -184,9 +153,5 @@ function addSlider()
             console.log('lightslider.js not found');
         }
     );
-
-    var d2 = new Date();
-    console.log("END: " + d2.toLocaleString());
-    console.log("END: " + d2.getTime());
 }
 // addSlider()
