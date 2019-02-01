@@ -180,11 +180,13 @@ function addSlider()
     // });
 
     // loadScripts(scripts);
-    $.getScript("https://vebmaster.github.io/slider.js").done(function(script, textStatus) {
-        console.log("finished = " + textStatus);
+    $.getScript("https://vebmaster.github.io/slider.js").done(function(script, textStatus, jqxhr) {
+        console.log("finished1 = " + textStatus);
+        console.log("finished1 = " + jqxhr.status ); // 200
 
-        $.getScript("https://vebmaster.github.io/lightslider/js/lightslider.js").done(function(script, textStatus) {
-            console.log("finished = " + textStatus);
+        $.getScript("https://vebmaster.github.io/lightslider/js/lightslider.js").done(function(script, textStatus, jqxhr) {
+            console.log("finished2 = " + textStatus);
+            console.log("finished2 = " + jqxhr.status ); // 200
         });
     });
 
