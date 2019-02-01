@@ -169,10 +169,10 @@ function addSlider()
     //     console.log("lightslider done: " + d4.getTime());
     // });
 
-    $.ajax('https://vebmaster.github.io/slider.js').then(
+    $.getScript('https://vebmaster.github.io/slider.js').then(
         function(){
             console.log('OK 1');
-            return $.ajax('https://vebmaster.github.io/lightslider/js/lightslider.js');
+            return $.getScript('https://vebmaster.github.io/lightslider/js/lightslider.js');
         }, function(){
             console.log('slider.js not found');
             return $.Deferred();
