@@ -127,26 +127,38 @@ function addMenu()
 
 
 /* enhance $.getSctipt to handle mutiple scripts */
-var getScript = jQuery.getScript;
-jQuery.getScript = function( resources, callback )
+// var getScript = jQuery.getScript;
+// jQuery.getScript = function( resources, callback )
+// {
+//     var // reference declaration & localization
+//         length = resources.length,
+//         handler = function() { counter++; },
+//         deferreds = [],
+//         counter = 0,
+//         idx = 0;
+//
+//     for ( ; idx < length; idx++ ) {
+//         deferreds.push(
+//             getScript( resources[ idx ], handler )
+//         );
+//     }
+//
+//     jQuery.when.apply( null, deferreds ).then(function() {
+//         callback && callback();
+//     });
+// };
+
+function loadScripts(arrayScripts)
 {
-    var // reference declaration & localization
-        length = resources.length,
-        handler = function() { counter++; },
-        deferreds = [],
-        counter = 0,
+    var length = resources.length,
         idx = 0;
-
     for ( ; idx < length; idx++ ) {
-        deferreds.push(
-            getScript( resources[ idx ], handler )
-        );
+        $.holdReady( true );
+        $.getScript( arrayScripts[idx], function() {
+            $.holdReady( false );
+        });
     }
-
-    jQuery.when.apply( null, deferreds ).then(function() {
-        callback && callback();
-    });
-};
+}
 
 
 function addSlider()
@@ -157,13 +169,15 @@ function addSlider()
         cache: true
     });
 
-    $.holdReady( true );
+    // $.holdReady( true );
     var scripts = ['https://vebmaster.github.io/slider.js',
                     'https://vebmaster.github.io/lightslider/js/lightslider.js',
                    ];
-    $.getScript(scripts, function(data, textStatus) {
-        $.holdReady( false );
-    });
+    // $.getScript(scripts, function(data, textStatus) {
+    //     $.holdReady( false );
+    // });
+
+    loadScripts(scripts);
 
     // $(document).ready(function()
     // {
