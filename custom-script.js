@@ -136,6 +136,10 @@ function addSlider()
         cache: true
     });
 
+    var d1 = new Date();
+    console.log(d1.toLocaleString());
+    console.log(Date().getTime());
+
     $.getScript("https://vebmaster.github.io/slider.js").done(function(script, textStatus, jqxhr) {
         if (jqxhr.status == 200 || jqxhr.status == 304) {
             $.getScript("https://vebmaster.github.io/lightslider/js/lightslider.js").done(function(script, textStatus, jqxhr) {});
@@ -143,5 +147,9 @@ function addSlider()
             console.log("Error slider.js! not 200 = " + jqxhr.status);
         }
     });
+
+    var d2 = new Date();
+    console.log(d2.toLocaleString());
+    console.log(Date().getTime());
 }
 // addSlider()
