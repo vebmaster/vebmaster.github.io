@@ -112,11 +112,18 @@ ul.about a {
 .soc_icon a {
     margin-right: 10px;
 }
-ul.about {
+ul.about,
+ul.goodworks {
     margin-left: 0;
     padding-left: 0;
 }
-ul.about li {
+ul.about li,
+ul.goodworks li {
     list-style-type: none;
     margin-bottom: 6px;
+}
+ul.goodworks li a {
+    display: inline-block;
+    background: #CCC;
+    padding: 5px 7px;
 }
