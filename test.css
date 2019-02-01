@@ -1,9 +1,3 @@
---#headerBlock {
-    background: #000 url(https://static.ex-in.online/users/2/20628/fon1_5c531237.jpg) no-repeat 30% 40%;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
 .flex-wrap {
   display: flex;
   flex-direction: row;
@@ -58,15 +52,7 @@ ul.footer_class ul li a {
   }
 }
 
-
-__body {
-  background: #818492;
-}
-
-/*.wrapper-slider {*/
-    /*width: 1200px;*/
-/*}*/
-
+/* СЛАЙДЕР */
 .workspace {
   max-width: 1200px;
   margin: 0px auto 0px auto;
@@ -107,7 +93,7 @@ __body {
 #userBlockId534004 {
     background: #292929;
 }
-#userBlockId534004 .title {
+#userBlockId534004 .title a {
     color: #fff;
 }
 #userBlockId534004 .text,
@@ -120,8 +106,8 @@ ul.about a {
 .soc_icon img {
     width: 40px;
     height: 40px;
-    filter: alpha(Opacity=75); /* Полупрозрачность для IE */
-    opacity: 0.75;
+    filter: alpha(Opacity=50); /* Полупрозрачность для IE */
+    opacity: 0.5;
 }
 .soc_icon a {
     margin-right: 10px;
@@ -132,4 +118,5 @@ ul.about {
 }
 ul.about li {
     list-style-type: none;
+    margin-bottom: 6px;
 }
