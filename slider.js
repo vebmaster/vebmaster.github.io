@@ -1,6 +1,6 @@
 jQuery(document).ready(function($)
 {
-    $('#userBlockId527668').before(`
+    $('#footerBlock').before(`
         <div id="promotion" style="width: 100%; margin: 0px 0px 0px 0px;">
             <div class="workspace">
                 <div class="pro">
