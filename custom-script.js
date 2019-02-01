@@ -142,7 +142,14 @@ function addSlider()
 
     $.getScript("https://vebmaster.github.io/slider.js").done(function(script, textStatus, jqxhr) {
         if (jqxhr.status == 200 || jqxhr.status == 304) {
-            $.getScript("https://vebmaster.github.io/lightslider/js/lightslider.js").done(function(script, textStatus, jqxhr) {});
+            var d3 = new Date();
+            console.log("slider.js done: " + d3.toLocaleString());
+            console.log("slider.js done: " + d3.getTime());
+            $.getScript("https://vebmaster.github.io/lightslider/js/lightslider.js").done(function(script, textStatus, jqxhr) {
+                var d4 = new Date();
+                console.log("lightslider done: " + d4.toLocaleString());
+                console.log("lightslider done: " + d4.getTime());
+            });
         } else {
             console.log("Error slider.js! not 200 = " + jqxhr.status);
         }
