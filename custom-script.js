@@ -156,6 +156,7 @@ function loadScripts(arrayScripts)
         $.holdReady( true );
         $.getScript( arrayScripts[idx], function() {
             $.holdReady( false );
+            setTimeout(function(){alert("hi")}, 1000);
         });
     }
 }
