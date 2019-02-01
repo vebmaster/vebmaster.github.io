@@ -2,13 +2,13 @@ jQuery(document).ready(function($)
 {
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
 
-    headerBackground();
+    headerCustom();
     addMenu();
     addSlider();
 });
 
 
-function headerBackground()
+function headerCustom()
 {
     if ($('#bgCover').css('background-image') == 'none') {
         $('#headerBlock').css({
@@ -17,8 +17,10 @@ function headerBackground()
             "padding-bottom": "30px",
         });
     }
+
+    $('#lpLogoImage').css('max-height', 'none');
 }
-// headerBackground()
+// headerCustom()
 
 
 function callback(parameter)
