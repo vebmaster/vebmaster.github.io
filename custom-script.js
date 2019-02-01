@@ -138,7 +138,6 @@ function addSlider()
 
     var d1 = new Date();
     console.log("1: " + d1.toLocaleString());
-    console.log("1: " + Date().getTime());
 
     $.getScript("https://vebmaster.github.io/slider.js").done(function(script, textStatus, jqxhr) {
         if (jqxhr.status == 200 || jqxhr.status == 304) {
@@ -150,6 +149,5 @@ function addSlider()
 
     var d2 = new Date();
     console.log("2: " + d2.toLocaleString());
-    console.log("2: " + Date().getTime());
 }
 // addSlider()
