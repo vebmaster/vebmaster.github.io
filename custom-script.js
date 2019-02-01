@@ -179,7 +179,14 @@ function addSlider()
     //     $.holdReady( false );
     // });
 
-    loadScripts(scripts);
+    // loadScripts(scripts);
+    $.getScript("https://vebmaster.github.io/slider.js").done(function(script, textStatus) {
+        console.log("finished = " + textStatus);
+
+        $.getScript("https://vebmaster.github.io/lightslider/js/lightslider.js").done(function(script, textStatus) {
+            console.log("finished = " + textStatus);
+        });
+    });
 
     // $(document).ready(function()
     // {
