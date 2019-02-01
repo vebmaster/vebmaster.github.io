@@ -139,7 +139,7 @@ function addSlider()
     $.getScript('https://vebmaster.github.io/slider.js')
     .then(
         function(){
-            console.log('OK 1');
+            //console.log('OK 1');
             return $.getScript('https://vebmaster.github.io/lightslider/js/lightslider.js');
         },
         function(){
@@ -148,7 +148,7 @@ function addSlider()
         }
     ).then(
         function(){
-            console.log('OK 2');
+            //console.log('OK 2');
         }, function(){
             console.log('lightslider.js not found');
         }
