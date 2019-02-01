@@ -150,7 +150,7 @@ function addMenu()
 
 function loadScripts(arrayScripts)
 {
-    var length = resources.length,
+    var length = arrayScripts.length,
         idx = 0;
     for ( ; idx < length; idx++ ) {
         $.holdReady( true );
@@ -159,6 +159,7 @@ function loadScripts(arrayScripts)
         });
     }
 }
+// loadScripts(arrayScripts)
 
 
 function addSlider()
