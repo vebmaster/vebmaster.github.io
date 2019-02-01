@@ -110,7 +110,8 @@ __body {
 #userBlockId534004 .title {
     color: #fff;
 }
-#userBlockId534004 .text {
+#userBlockId534004 .text,
+ul.about a {
     color: #9e9e9e;
 }
 .soc_icon {
