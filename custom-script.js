@@ -135,7 +135,7 @@ function addSlider()
     });
 
     $.getScript("https://vebmaster.github.io/slider.js").done(function(script, textStatus, jqxhr) {
-        if (jqxhr.status == 200) {
+        if (jqxhr.status == 200 || jqxhr.status == 304) {
             $.getScript("https://vebmaster.github.io/lightslider/js/lightslider.js").done(function(script, textStatus, jqxhr) {});
         } else {
             console.log("Error slider.js! not 200 = " + jqxhr.status);
