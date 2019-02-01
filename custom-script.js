@@ -169,7 +169,7 @@ function addSlider()
     //     console.log("lightslider done: " + d4.getTime());
     // });
 
-    $.getScript('https://vebmaster.github.io/slider.js').then(
+    $.getScript('https://vebmaster.github.io/slider.js1').then(
         function(){
             console.log('OK 1');
             return $.getScript('https://vebmaster.github.io/lightslider/js/lightslider.js');
