@@ -121,3 +121,8 @@ ul.footerlist li  {
     list-style-type: none;
     margin-bottom: 6px;
 }
+
+#maps img {
+    width: 100%;
+    height: 500px;
+}

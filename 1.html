@@ -34,7 +34,66 @@
         11111111111
     </div>
 
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A61e8b4ba3e9937f84472f892980cc30b247d4ae6ebf4fdaaaba2dcd822a8a7f1&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+    <script type="text/javascript" charset="utf-8" async src="-https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A61e8b4ba3e9937f84472f892980cc30b247d4ae6ebf4fdaaaba2dcd822a8a7f1&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+
+    <a href="https://yandex.ru/maps/?um=constructor%3A1055dd74e0589f760b169d0b04489d36e338d05c8d52e838c0771106254f0ac9&amp;source=constructorStatic" target="_blank"><img src="-https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A1055dd74e0589f760b169d0b04489d36e338d05c8d52e838c0771106254f0ac9&amp;width=600&amp;height=400&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
+
+    <div id="map_container">
+        <div id="ymaps-map-container"></div>
+
+
+        <div id="map_block">
+            <div style="padding: 64px 0px 0px 0px;">
+                <div style="width: 40%; height: 400px; opacity: 0.9; background: #292929; position: absolute; left: 0px; top: 124px; margin: 0px 0px 0px 0px;"></div>
+                <div class="null"></div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="map_address">
+            <div class="workspace">
+
+                <div id="address_info">
+                    <div style="padding: 44px 0px 36px 0px;">
+
+                        <span style="font-size: 26px; font-weight: bold;">Мы работаем на<br />территории всей России!</span>
+
+                        <div style="margin: 24px 0px 0px 0px; font-size: 18px;">Наш технолог готов выехать к Вам в любое время.</div>
+
+                        <form id="form_4" name="form_4" action="" method="POST" enctype="application/x-www-form-urlencoded">
+                            <input required style="width: 300px;" type="text" class="input" name="city" id="city" placeholder="Ваш город" autocomplete="off" />
+                            <input required style="width: 300px;" name="phone" id="phone" type="text" class="input phone" placeholder="Телефон" autocomplete="off" />
+                            <div class="button" style="float: left; margin: 10px 0px 0px 0px;" onClick="document.getElementById('form_4').submit(); alert('Спасибо, Ваш заказ отправлен!'); return false;">Отправить</div>
+
+                            <input type="hidden" name="reachGoal" value="form_4" />
+                            <input type="hidden" name="call_back_hidden_4" value="1" />
+                        </form>
+
+                    </div>
+                </div>
+
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?coordorder=longlat&amp;load=package.full&amp;wizard=constructor&amp;lang=ru-RU"></script>
+    <script>
+        ymaps.ready(function() {
+            var map = new ymaps.Map("ymaps-map-container", {center: [38.44945750000001,55.785746068934536], zoom: 15, type: "yandex#map"});
+            map.controls.add("zoomControl");
+            map.geoObjects.add(new ymaps.Placemark([38.44945750000001,55.785746068934536], {balloonContent: ""}, {preset: "twirl#blackDotIcon"}));
+        });
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+
+            if(ymaps.geolocation.city != undefined) {
+                $("#public_city").html(ymaps.geolocation.city);
+                $("#city").val(ymaps.geolocation.city);
+            }
+        }
+    </script>
 
 </div>
 

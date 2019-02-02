@@ -161,9 +161,15 @@ function addSlider()
 
 function addMap()
 {
+    // $('#userBlockId534004').before(`
+    //     <div id="maps" style="width: 100%; margin: 0px 0px 0px 0px;">
+    //         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A61e8b4ba3e9937f84472f892980cc30b247d4ae6ebf4fdaaaba2dcd822a8a7f1&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=false"></script>
+    //     </div>
+    // `);
+
     $('#userBlockId534004').before(`
-        <div id="maps" style="width: 100%; margin: 0px 0px 0px 0px;">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A61e8b4ba3e9937f84472f892980cc30b247d4ae6ebf4fdaaaba2dcd822a8a7f1&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=false"></script>
+        <div id="maps">
+            <img src="https://vebmaster.github.io/images/map_yandex.jpg">
         </div>
     `);
 }
