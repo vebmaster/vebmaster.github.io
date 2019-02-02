@@ -168,9 +168,7 @@ function addMap()
     // `);
 
     $('#userBlockId534004').before(`
-        <div id="maps">
-            <img src="https://vebmaster.github.io/images/map_yandex.jpg">
-        </div>
+        <div id="maps"></div>
     `);
 }
 // addMap()

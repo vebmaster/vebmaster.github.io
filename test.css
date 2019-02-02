@@ -122,8 +122,9 @@ ul.footerlist li  {
     margin-bottom: 6px;
 }
 
-#maps img {
+#maps {
     width: 100%;
     max-width: 1919px;
     height: 500px;
+    background: url(https://vebmaster.github.io/images/map_yandex.jpg) 50% 50% no-repeat;
 }
