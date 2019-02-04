@@ -125,6 +125,12 @@ ul.footerlist a {
     font-size: 14px;
     line-height: 1.4;
 }
+@media (min-width: 992px) {
+    .footer-wrap .item,
+    .footer-wrap .item.last-item {
+        margin-bottom: 0;
+    }
+}
 .soc_icon {
     margin-top: 10px;
 }
