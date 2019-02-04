@@ -21,6 +21,16 @@ function customHeader()
     }
 
     $('#lpLogoImage').css('max-height', 'none');
+
+    $('#headerBlock #lpEmailBlock').html(`
+        <a href="tel:74842404343" id="" style="color: #ffffff">
+            <span style="font-size: 15px;">+7(4842)40-43-43</span>
+        </a>
+    `);
+
+    $('#headerBlock #lpPhoneBlock').html(`
+        <span style="font-size: 12px; color: #ffffff">Калуга и Калужская область</span>
+    `);
 }
 // customHeader()
 
