@@ -93,6 +93,13 @@ ul.footer_class ul li a {
 .custom-footer {
     background: #292929;
 }
+.custom-footer > .col-xs-12,
+.custom-footer > .col-sm-12,
+.custom-footer > .col-md-3,
+.custom-footer > .col-lg-3 {
+    padding-right: 0;
+    padding-left: 0;
+}
 .custom-footer .title,
 .custom-footer .title a {
     color: #fff;
