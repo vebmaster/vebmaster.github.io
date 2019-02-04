@@ -201,6 +201,8 @@ function customMain()
                 $(this).wrap('<div class="wrapForm-main"></div>');
         });
         $('.wrapForm-main > form').addClass('form-main');
-    }
+        $('#lpLogoImage').hide();
+
+
 }
 // customMain()
