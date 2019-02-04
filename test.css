@@ -93,10 +93,10 @@ ul.footer_class ul li a {
 .custom-footer {
     background: #292929;
 }
-.footer-wrap > .col-xs-12,
-.footer-wrap > .col-sm-12,
-.footer-wrap > .col-md-3,
-.footer-wrap > .col-lg-3 {
+.footer-wrap .col-xs-12,
+.footer-wrap .col-sm-12,
+.footer-wrap .col-md-3,
+.footer-wrap .col-lg-3 {
     padding-right: 0;
     padding-left: 0;
 }
