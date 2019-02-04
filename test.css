@@ -161,9 +161,9 @@ ul.footerlist li  {
 
 
 /* Главная страница */
-.wrapForm {
+.wrapForm-main {
      padding: 0;
  }
-.wrapForm #phonecontactform-phone.form-control {
+.wrapForm-main #phonecontactform-phone.form-control {
     background-color: transparent;
 }

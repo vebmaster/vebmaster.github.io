@@ -197,8 +197,8 @@ function customMain()
 {
     if (window.location.href.indexOf("/site_6") > -1) {
         $('.first-page form').each(function(){
-            if (!$(this).parent().hasClass('wrapForm'))
-                $(this).wrap('<div class="wrapForm"></div>');
+            if (!$(this).parent().hasClass('wrapForm-main'))
+                $(this).wrap('<div class="wrapForm-main"></div>');
         });
 
         //$('.first-page form').css("padding", "0");
