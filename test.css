@@ -161,10 +161,9 @@ ul.footerlist li  {
 
 
 /* Главная страница */
-.lp-site-templates .content .form-col form
-.first-page form {
-    padding: 0;
-}
-.first-page form #phonecontactform-phone.form-control {
+.wrapForm {
+     padding: 0;
+ }
+.wrapForm #phonecontactform-phone.form-control {
     background-color: transparent;
 }
