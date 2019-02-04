@@ -200,8 +200,7 @@ function customMain()
             if (!$(this).parent().hasClass('wrapForm-main'))
                 $(this).wrap('<div class="wrapForm-main"></div>');
         });
-
-        //$('.first-page form').css("padding", "0");
+        $('.wrapForm-main > form').addClass('form-main');
     }
 }
 // customMain()

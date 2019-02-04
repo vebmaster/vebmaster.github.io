@@ -164,9 +164,9 @@ ul.footerlist li  {
 .wrapForm-main {
     max-width: 500px;
 }
-.wrapForm-main form {
+.wrapForm-main form.form-main {
      padding: 0;
  }
-.wrapForm-main #phonecontactform-phone.form-control {
+form.form-main #phonecontactform-phone.form-control {
     background-color: transparent;
 }
