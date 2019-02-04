@@ -173,7 +173,7 @@ form.form-main #phonecontactform-phone.form-control {
     background-color: transparent;
 }
 body form.form-main .contact_form button.btn.btn-license {
-    padding: unset !important;
+    padding: 6px 12px !important;
 }
 form.form-main .contact_form .col-xs-12,
 form.form-main .contact_form .col-sm-12,
