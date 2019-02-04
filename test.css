@@ -163,6 +163,7 @@ ul.footerlist li  {
 /* Главная страница */
 .wrapForm-main {
     max-width: 500px;
+    margin: 0 auto;
 }
 .wrapForm-main form.form-main {
      padding: 0;
