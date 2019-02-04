@@ -172,7 +172,7 @@ ul.footerlist li  {
 form.form-main #phonecontactform-phone.form-control {
     background-color: transparent;
 }
-body form.form-main .contact_form button.btn.btn-license {
+form.form-main button.btn {
     padding: 6px 12px !important;
 }
 form.form-main .contact_form .col-xs-12,
@@ -180,4 +180,10 @@ form.form-main .contact_form .col-sm-12,
 form.form-main .contact_form .col-md-6,
 form.form-main .contact_form .col-lg-6 {
     padding: 0;
+}
+form.form-main input.phonecontactform-phone,
+form.form-main button.btn {
+    -webkit-border-radius: 120px;
+    -moz-border-radius: 120px;
+    border-radius: 120px;
 }
