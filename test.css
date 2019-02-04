@@ -161,7 +161,7 @@ ul.footerlist li  {
 
 
 /* Главная страница */
-.wrapForm-main {
+.wrapForm-main form {
      padding: 0;
  }
 .wrapForm-main #phonecontactform-phone.form-control {
