@@ -161,6 +161,9 @@ ul.footerlist li  {
 
 
 /* Главная страница */
+#contact-form5c587718e12f5 {
+    padding: 0;
+}
 #contact-form5c587718e12f5 .form-control {
     background-color: transparent;
 }
