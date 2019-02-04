@@ -91,19 +91,12 @@ ul.footer_class ul li a {
 
 /* Footer Custom */
 .custom-footer {
-    background: #292929;
+    background: #333;
 }
 .custom-footer .row > .col-xs-12,
 .custom-footer .row > .col-sm-12,
 .custom-footer .row > .col-md-3,
 .custom-footer .row > .col-lg-3 {
-    padding-right: 0;
-    padding-left: 0;
-}
-_.footer-wrap .col-xs-12,
-_.footer-wrap .col-sm-12,
-_.footer-wrap .col-md-3,
-_.footer-wrap .col-lg-3 {
     padding-right: 0;
     padding-left: 0;
 }
