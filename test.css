@@ -90,14 +90,14 @@ ul.footer_class ul li a {
 }
 
 /* Footer MY */
-#custom-footer {
+.custom-footer {
     background: #292929;
 }
-#custom-footer .title,
-#custom-footer .title a {
+.custom-footer .title,
+.custom-footer .title a {
     color: #fff;
 }
-#custom-footer .text,
+.custom-footer .text,
 ul.footerlist a {
     color: #9e9e9e;
 }

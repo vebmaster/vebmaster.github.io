@@ -159,7 +159,6 @@ function addSlider()
 // addSlider()
 
 
-
 function addMap()
 {
     // $('#userBlockId534004').before(`
@@ -179,4 +178,4 @@ function customFooter()
 {
     $( ".block-txt07:has(.footer-wrap)" ).addClass( "custom-footer" );
 }
-// customHeader()
+// customFooter()
