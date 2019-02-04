@@ -89,14 +89,14 @@ ul.footer_class ul li a {
     background: #000;
 }
 
-/* Footer MY */
+/* Footer Custom */
 .custom-footer {
     background: #292929;
 }
-.custom-footer > .col-xs-12,
-.custom-footer > .col-sm-12,
-.custom-footer > .col-md-3,
-.custom-footer > .col-lg-3 {
+.footer-wrap > .col-xs-12,
+.footer-wrap > .col-sm-12,
+.footer-wrap > .col-md-3,
+.footer-wrap > .col-lg-3 {
     padding-right: 0;
     padding-left: 0;
 }
