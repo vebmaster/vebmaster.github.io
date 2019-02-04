@@ -90,6 +90,9 @@ ul.footer_class ul li a {
 }
 
 /* Footer MY */
+div.block-txt07:has(.footer-wrap) {
+    background: #292929;
+}
 #userBlockId534004 {
     background: #292929;
 }
