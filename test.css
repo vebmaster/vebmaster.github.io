@@ -158,3 +158,9 @@ ul.footerlist li  {
     height: 500px;
     background: url(https://vebmaster.github.io/images/map_yandex.jpg) 50% 50% no-repeat;
 }
+
+
+/* Главная страница */
+#contact-form5c587718e12f5 .form-control {
+    background-color: transparent;
+}
