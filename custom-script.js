@@ -196,13 +196,12 @@ function customFooter()
 function customMain()
 {
     if (window.location.href.indexOf("/site_6") > -1) {
-        $('.first-page form').each(function(){
+        $('.first-page form').each(function () {
             if (!$(this).parent().hasClass('wrapForm-main'))
                 $(this).wrap('<div class="wrapForm-main"></div>');
         });
         $('.wrapForm-main > form').addClass('form-main');
         $('#lpLogoImage').hide();
-
-
+    }
 }
 // customMain()
