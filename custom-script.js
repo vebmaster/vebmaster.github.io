@@ -2,14 +2,15 @@ jQuery(document).ready(function($)
 {
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
 
-    headerCustom();
+    customHeader();
     addMenu();
     addSlider();
     addMap();
+    customFooter();
 });
 
 
-function headerCustom()
+function customHeader()
 {
     if ($('#bgCover').css('background-image') == 'none') {
         $('#headerBlock').css({
@@ -21,7 +22,7 @@ function headerCustom()
 
     $('#lpLogoImage').css('max-height', 'none');
 }
-// headerCustom()
+// customHeader()
 
 
 function callback(parameter)
@@ -172,3 +173,10 @@ function addMap()
     `);
 }
 // addMap()
+
+
+function customFooter()
+{
+    $( ".block-txt07:has(.footer-wrap)" ).addClass( "custom-footer" );
+}
+// customHeader()

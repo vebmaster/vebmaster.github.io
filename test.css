@@ -90,17 +90,14 @@ ul.footer_class ul li a {
 }
 
 /* Footer MY */
-div.block-txt07:has(.footer-wrap) {
+#custom-footer {
     background: #292929;
 }
-#userBlockId534004 {
-    background: #292929;
-}
-#userBlockId534004 .title,
-#userBlockId534004 .title a {
+#custom-footer .title,
+#custom-footer .title a {
     color: #fff;
 }
-#userBlockId534004 .text,
+#custom-footer .text,
 ul.footerlist a {
     color: #9e9e9e;
 }
