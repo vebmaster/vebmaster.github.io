@@ -171,8 +171,8 @@ ul.footerlist li  {
 form.form-main #phonecontactform-phone.form-control {
     background-color: transparent;
 }
-body form.form-main button.btn {
-    padding: none !important;
+body form.form-main .contact_form button.btn {
+    padding: none!important;
 }
 form.form-main .contact_form .col-xs-12,
 form.form-main .contact_form .col-sm-12,
