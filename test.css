@@ -181,7 +181,7 @@ form.form-main .contact_form .col-md-6,
 form.form-main .contact_form .col-lg-6 {
     padding: 0;
 }
-form.form-main input.phonecontactform-phone,
+form.form-main input#phonecontactform-phone,
 form.form-main button.btn {
     -webkit-border-radius: 120px;
     -moz-border-radius: 120px;
