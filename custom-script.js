@@ -7,6 +7,8 @@ jQuery(document).ready(function($)
     addSlider();
     addMap();
     customFooter();
+    customMain();
+
 });
 
 
@@ -187,5 +189,14 @@ function addMap()
 function customFooter()
 {
     $( ".block-txt07:has(.footer-wrap)" ).addClass( "custom-footer" );
+}
+// customFooter()
+
+
+function customMain()
+{
+    if (window.location.href.indexOf("/site_6") > -1) {
+        $('.first-page form').css("padding", "0");
+    }
 }
 // customFooter()
