@@ -24,7 +24,7 @@ function customHeader()
 
     $('#headerBlock #lpEmailBlock').html(`
         <a href="tel:74842404343" id="" style="color: #ffffff">
-            <span style="font-size: 18px;">+7(4842)40-43-43</span>
+            <span style="font-size: 18px; font-weight: bold;">+7(4842)40-43-43</span>
         </a>
     `);
 
