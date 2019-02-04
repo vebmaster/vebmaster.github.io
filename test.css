@@ -111,6 +111,9 @@ ul.footerlist a {
 .footer-wrap .item {
     margin-bottom: 40px;
 }
+.footer-wrap .item.last-item {
+    margin-bottom: 0;
+}
 .footer-wrap .item > .title {
     font-weight: 500;
     line-height: 1.2;
