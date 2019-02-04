@@ -166,12 +166,13 @@ ul.footerlist li  {
     margin: 0 auto;
 }
 .wrapForm-main form.form-main {
-     padding: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
  }
 form.form-main #phonecontactform-phone.form-control {
     background-color: transparent;
 }
-body form.form-main .contact_form button.btn {
+body form.form-main .contact_form button.btn.btn-license {
     padding: none!important;
 }
 form.form-main .contact_form .col-xs-12,
