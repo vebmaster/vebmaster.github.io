@@ -168,7 +168,7 @@ ul.footerlist li  {
 .wrapForm-main form.form-main {
     padding: 0 !important;
     border: 0 !important;
- }
+}
 form.form-main #phonecontactform-phone.form-control {
     background-color: transparent;
 }
@@ -188,7 +188,6 @@ form.form-main button.btn {
     -moz-border-radius: 120px;
     border-radius: 120px;
 }
-
 @media (min-width: 768px) {
     form.form-main .col-sm-12 {
         width: 50%;
@@ -196,4 +195,7 @@ form.form-main button.btn {
 }
 form.form-main .col-xs-12 {
     width: 50%;
+}
+input, textarea {
+    outline: none;
 }
