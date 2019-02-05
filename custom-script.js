@@ -195,7 +195,8 @@ function customFooter()
 
 function customMain()
 {
-    if (window.location.href.indexOf("/") > -1) {
+    //if (window.location.href.indexOf("/") > -1) {
+    if(window.location.pathname.length == 1 || window.location.pathname.length == 0 || window.location.pathname === "/") {
         $('.first-page form').each(function () {
             if (!$(this).parent().hasClass('wrapForm-main'))
                 $(this).wrap('<div class="wrapForm-main"></div>');
