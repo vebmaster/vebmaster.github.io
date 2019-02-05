@@ -4,8 +4,8 @@ jQuery(document).ready(function($)
 
     customHeader();
     addMenu();
-    addSlider();
     addMap();
+    addSlider();
     customFooter();
     customMain();
 
@@ -179,7 +179,7 @@ function addMap()
     //     </div>
     // `);
 
-    $('#userBlockId534004').before(`
+    $('#userBlockId538200').before(`
         <div id="maps"></div>
     `);
 }
