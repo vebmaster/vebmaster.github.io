@@ -165,7 +165,7 @@ function addSlider()
         cache: true
     });
 
-    $.getScript('https://vebmaster.github.io/slider.js-')
+    $.getScript('https://vebmaster.github.io/slider.js')
     .then(
         function(){
             //console.log('OK 1');
