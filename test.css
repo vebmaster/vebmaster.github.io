@@ -201,3 +201,6 @@ textarea,
 button.btn {
     outline: none;
 }
+*:focus {
+    outline: none;
+}
