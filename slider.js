@@ -18,7 +18,7 @@ jQuery(document).ready(function($)
                                                 <div class="border-pro">
                                                     <div style="text-align: center; padding: 64px 0px 0px 0px; font-size: 24px; font-weight: bold;">
         
-                                                        
+                                                        3D потолки
         
                                                     </div>
                                                 </div>
