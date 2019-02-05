@@ -188,3 +188,9 @@ form.form-main button.btn {
     -moz-border-radius: 120px;
     border-radius: 120px;
 }
+
+@media (min-width: 768px) {
+    form.form-main .col-sm-12 {
+        width: 50%;
+    }
+}
