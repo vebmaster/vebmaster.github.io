@@ -196,6 +196,8 @@ form.form-main button.btn {
 form.form-main .col-xs-12 {
     width: 50%;
 }
-input, textarea {
+input,
+textarea,
+button.btn {
     outline: none;
 }
