@@ -12,13 +12,13 @@ jQuery(document).ready(function($)
                             <ul class="slides">
                                 <li>
                                     <a href="/specialnye-predlozheniya/paryaschie/">
-                                        <div class="cont" style="background: url(https://vebmaster.github.io/images/test1.jpg) center no-repeat; background-size: cover;">
+                                        <div class="cont" style="background: url(https://vebmaster.github.io/images/slider-3d-potolki.jpg) center no-repeat; background-size: cover;">
         
                                             <div style="padding: 18px;">
                                                 <div class="border-pro">
                                                     <div style="text-align: center; padding: 64px 0px 0px 0px; font-size: 24px; font-weight: bold;">
         
-                                                        Парящие
+                                                        3D потолки
         
                                                     </div>
                                                 </div>
