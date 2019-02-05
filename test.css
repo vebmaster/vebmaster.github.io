@@ -198,18 +198,14 @@ form.form-main .col-xs-12 {
 }
 input,
 textarea,
-button.btn {
-    outline: 0 !important;
-}
-*:focus {
-    outline: 0 !important;
-}
+button.btn,
+*:focus,
 .btn.active.focus,
 .btn.active:focus,
 .btn.focus,
 .btn:active.focus,
 .btn:active:focus,
 .btn:focus {
-    outline: 0;
+    outline: 0 !important;
     outline-offset: 0;
 }
