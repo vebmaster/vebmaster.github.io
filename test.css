@@ -199,8 +199,8 @@ form.form-main .col-xs-12 {
 input,
 textarea,
 button.btn {
-    outline: none;
+    outline: 0 !important;
 }
 *:focus {
-    outline: none;
+    outline: 0 !important;
 }
