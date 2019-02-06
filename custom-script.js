@@ -150,7 +150,7 @@ function addMap()
     //     </div>
     // `);
 
-    $('#userBlockId538200').before(`
+    $('.custom-footer').before(`
         <div id="maps"></div>
     `);
 }
