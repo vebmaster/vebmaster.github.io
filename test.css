@@ -126,16 +126,16 @@ ul.footerlist a {
         margin-bottom: 0;
     }
 }
-.soc_icon {
+.s_icon {
     margin-top: 10px;
 }
-.soc_icon img {
+.s_icon img {
     width: 40px;
     height: 40px;
     filter: alpha(Opacity=50); /* Полупрозрачность для IE */
     opacity: 0.5;
 }
-.soc_icon a {
+.s_icon a {
     margin-right: 10px;
 }
 ul.footerlist  {
