@@ -49,6 +49,18 @@ function callback(parameter)
 // callback(parameter)
 
 
+// Ожидание появление элемента на странице
+var waitForElement = function(selector, callbackFunc) {
+    if (jQuery(selector).length) {
+        callbackFunc();
+    } else {
+        setTimeout(function() {
+            waitForEl(selector, callbackFunc);
+        }, 100);
+    }
+};
+
+
 function addMenu()
 {
     $("ul.navbar-nav").before( '<i class="fa fa-bars" aria-hidden="true" style="color: #FFF; cursor: pointer; font-size: 28px;" onclick="callback(\'bar\');"></i>' );
@@ -200,7 +212,10 @@ function customMain()
         .then(
             function(){
                 console.log('OK products');
-                return $.getScript('https://vebmaster.github.io/products.js');
+                alert('OK');
+                waitForElement("#promotion", function () {
+                    addProducts();
+                });
             },
             function(){
                 console.log('products.js not found');

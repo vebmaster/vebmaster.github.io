@@ -1,4 +1,4 @@
-jQuery(document).ready(function($)
+function addProducts()
 {
     $('#promotion').before(`
     
@@ -169,4 +169,4 @@ jQuery(document).ready(function($)
 </div>
     
     `);
-});
+}
