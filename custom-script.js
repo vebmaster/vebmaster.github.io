@@ -212,7 +212,6 @@ function customMain()
         .then(
             function(){
                 console.log('OK products');
-                alert('OK');
                 waitForElement("#promotion", function () {
                     addProducts();
                 });
