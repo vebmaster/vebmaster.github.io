@@ -211,7 +211,7 @@ function customMain()
         $.getScript('https://vebmaster.github.io/products.js')
         .then(
             function(){
-                console.log('OK products');
+                //console.log('OK products');
                 waitForElement("#promotion", function () {
                     addProducts();
                 });

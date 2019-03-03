@@ -95,7 +95,10 @@ function addProducts()
                 </div>
 
 
-                <div style="width: 160px; margin: 6px auto 0px auto; text-align: center; background: #d57787; border-bottom: 4px solid #c6576a; font-weight: 400; color: #FFF; font-size: 22px; border-radius: 200px; padding: 14px 0px 14px 0px; cursor: pointer;" onclick="callback('block_1');">Заказать</div>
+                <div style="width: 160px; margin: 6px auto 0px auto; text-align: center; background: #d57787; border-bottom: 4px solid #c6576a; font-weight: 400; color: #FFF; font-size: 22px; border-radius: 200px; padding: 14px 0px 14px 0px; cursor: pointer;" 
+                    data-target="#lpFormOrderModal587523">
+                    Заказать
+                </div>
 
             </div>
         </div>
