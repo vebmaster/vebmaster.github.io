@@ -225,9 +225,9 @@ button.btn,
 /*
 Блок с формой на главной
  */
-#userBlockId587523 {
+__#userBlockId587523 {
     padding: 0;
 }
-#userBlockId587523 #lpFormModalButtonText587523 {
+__#userBlockId587523 #lpFormModalButtonText587523 {
     display: none;
 }
