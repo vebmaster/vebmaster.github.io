@@ -150,11 +150,11 @@ jQuery(document).ready(function($)
 
 
 
-                <a href="/specialnye-predlozheniya/msd-evolution/" style="text-decoration: none;">
+                <a href="#test" style="text-decoration: none;">
                     <div class="spec_but_1">Подробнее</div>
                 </a>
 
-                <div class="spec_but_2" onclick="callback('block_1');">Заказать</div>
+                <div class="spec_but_2" onclick="callback('block_1');"><a href="#" id="lpFormModalButtonText587523" class="_animated _fadeIn btn btn-block btn-modal-launch" style="background-color: ; color: " data-toggle="modal" data-target="#lpFormOrderModal587523">Заказать</a></div>
 
 
                 <div class="null"></div>
