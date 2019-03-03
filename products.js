@@ -58,7 +58,7 @@ jQuery(document).ready(function($)
 
                 <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">Sofito Premium</span></div>
 
-                <div class="pro_image" style="background: url(https://vebmaster.github.io/images/design/ceilings_premium.jpg) center no-repeat; background-size: contain;"></div>
+                <div class="pro_image" style="background: url(https://vebmaster.github.io/images/ceilings_premium.jpg) center no-repeat; background-size: contain;"></div>
 
                 <div class="first_list">
                     <div style="position: absolute; top: 9px; font-size: 11px; color: #c0c0c0;">Производитель</div>
