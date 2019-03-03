@@ -55,7 +55,7 @@ var waitForElement = function(selector, callbackFunc) {
         callbackFunc();
     } else {
         setTimeout(function() {
-            waitForEl(selector, callbackFunc);
+            waitForElement(selector, callbackFunc);
         }, 100);
     }
 };
