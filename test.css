@@ -209,7 +209,7 @@ button.btn,
 
 /* Блок Продукты */
 #products {
-    margin: 50px 0 0 0;
+    margin: 50px 0 30px 0;
     font-size: 14px;
 }
 #products .pro_image {width: 348px; height: 260px; margin: 0px auto 0px auto;}
