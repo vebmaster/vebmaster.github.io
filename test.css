@@ -221,3 +221,10 @@ button.btn,
 #products .spec_but_1 {width: 160px; margin: 6px 0px 0px 0px; float: left; text-align: center; background: #FFF; border: 2px solid #acacac; font-weight: 400; color: #acacac; font-size: 22px; border-radius: 200px; padding: 14px 0px 14px 0px; cursor: pointer;}
 #products .spec_but_2 {width: 160px; margin: 6px 0px 0px 0px; float: right; text-align: center; background: #d57787; border-bottom: 4px solid #c6576a; font-weight: 400; color: #FFF; font-size: 22px; border-radius: 200px; padding: 14px 0px 14px 0px; cursor: pointer;}
 #products .spec_desc {text-align: center; padding: 64px 0px 0px 0px;}
+
+/*
+Блок с формой на главной
+ */
+#userBlockId587523 {
+    display: none;
+}
