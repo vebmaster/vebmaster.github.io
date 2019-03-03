@@ -154,7 +154,10 @@ jQuery(document).ready(function($)
                     <div class="spec_but_1">Подробнее</div>
                 </a>
 
-                <div class="spec_but_2" onclick="callback('block_1');"><a href="#" id="lpFormModalButtonText587523" class="_animated _fadeIn btn btn-block btn-modal-launch" style="background-color: ; color: " data-toggle="modal" data-target="#lpFormOrderModal587523">Заказать</a></div>
+                <div class="spec_but_2" onclick="callback('block_1');">
+                    <a href="#" id="lpFormModalButtonText587523" __class="_animated _fadeIn btn btn-block btn-modal-launch" 
+                    style="background-color: ; color:#fff; text-decoration: none;" data-toggle="modal" data-target="#lpFormOrderModal587523">Заказать</a>
+                </div>
 
 
                 <div class="null"></div>
