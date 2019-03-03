@@ -196,7 +196,7 @@ function customMain()
         $('.wrapForm-main > form').addClass('form-main');
         $('#lpLogoImage').hide();
 
-        $.getScript('https://vebmaster.github.io/product.js')
+        $.getScript('https://vebmaster.github.io/products.js')
         .then(
             function(){
                 console.log('OK products');
