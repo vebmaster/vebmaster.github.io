@@ -188,7 +188,6 @@ function customFooter()
 
 function customMain()
 {
-    //if (window.location.href.indexOf("/") > -1) {
     if(window.location.pathname.length == 1 || window.location.pathname.length == 0 || window.location.pathname === "/") {
         $('.first-page form').each(function () {
             if (!$(this).parent().hasClass('wrapForm-main'))
@@ -196,6 +195,18 @@ function customMain()
         });
         $('.wrapForm-main > form').addClass('form-main');
         $('#lpLogoImage').hide();
+
+        $.getScript('https://vebmaster.github.io/product.js')
+        .then(
+            function(){
+                console.log('OK products');
+                return $.getScript('https://vebmaster.github.io/products.js');
+            },
+            function(){
+                console.log('products.js not found');
+                return $.Deferred();
+            }
+        )
     }
 }
 // customMain()
