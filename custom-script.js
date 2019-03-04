@@ -60,6 +60,16 @@ var waitForElement = function(selector, callbackFunc) {
     }
 };
 
+function waitForEl(selector, callbackFunc, maxtries = false, interval = 100){
+    const poller = setInterval(() => {
+        const el = jQuery(selector)
+        const retry = maxtries === false || maxtries-- > 0
+        if (retry && el.length < 1) return // will try again
+        clearInterval(poller)
+        callbackFunc(el || null)
+    }, interval)
+}
+
 
 function addMenu()
 {
@@ -212,9 +222,13 @@ function customMain()
         .then(
             function(){
                 //console.log('OK products');
-                waitForElement("#promotion", function () {
+                // waitForElement("#promotion", function () {
+                //     addProducts();
+                // });
+                waitForEl("#promotion", function () {
+                    console.log('OK #promotion');
                     addProducts();
-                });
+                }, 20);
             },
             function(){
                 console.log('products.js not found');
