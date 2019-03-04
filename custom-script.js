@@ -50,38 +50,18 @@ function callback(parameter)
 
 
 // Ожидание появление элемента на странице
-var waitForElement = function(selector, callbackFunc) {
-    if (jQuery(selector).length) {
-        callbackFunc();
-    } else {
-        setTimeout(function() {
-            waitForElement(selector, callbackFunc);
-        }, 100);
-    }
-};
-
-function waitForEl_test(selector, callbackFunc, maxtries = false, interval = 100){
-    const poller = setInterval(() => {
-        const el = jQuery(selector)
-        const retry = maxtries === false || maxtries-- > 0
-        if (retry && el.length < 1) return // will try again
-        clearInterval(poller)
-        callbackFunc(el || null)
-    }, interval)
-}
-
-var waitForEl = function(selector, callbackFunc, count) {
+var waitForElement = function(selector, callbackFunc, count) {
     if (jQuery(selector).length) {
         callbackFunc();
     } else {
         setTimeout(function() {
             if(!count) {
-                count=0;
+                count = 0;
             }
             count++;
-            console.log("count: " + count);
-            if(count<20) {
-                waitForEl(selector,callbackFunc,count);
+            //console.log("count: " + count);
+            if(count < 20) {
+                waitForElement(selector,callbackFunc,count);
             } else {return;}
         }, 100);
     }
@@ -238,11 +218,7 @@ function customMain()
         $.getScript('https://vebmaster.github.io/products.js')
         .then(
             function(){
-                // waitForElement("#promotion", function () {
-                //     console.log('OK #promotion');
-                //     addProducts();
-                // });
-                waitForEl("#promotion", function () {
+                waitForElement("#promotion", function () {
                     console.log('OK #promotion');
                     addProducts();
                 }, 20);
