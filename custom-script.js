@@ -221,14 +221,14 @@ function customMain()
         $.getScript('https://vebmaster.github.io/products.js')
         .then(
             function(){
-                //console.log('OK products');
-                // waitForElement("#promotion", function () {
-                //     addProducts();
-                // });
-                waitForEl("#promotion", function () {
+                waitForElement("#promotion", function () {
                     console.log('OK #promotion');
                     addProducts();
-                }, 20);
+                });
+                // waitForEl("#promotion", function () {
+                //     console.log('OK #promotion');
+                //     addProducts();
+                // }, 20);
             },
             function(){
                 console.log('products.js not found');
