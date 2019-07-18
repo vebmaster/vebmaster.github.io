@@ -5,6 +5,7 @@ jQuery(document).ready(function($)
     customHeader(); // Везде
     addMenu(); // Везде
     customFooter(); // Везде
+    addMap(); // Везде перед футером
 
     urlParser(); // Блоки в зависимости от URL страницы
 });
@@ -24,7 +25,7 @@ function urlParser()
         console.log('OK=/about');
 
         // Слайдер
-        $('.custom-footer').before(`<div id="slider"></div>`);
+        $('#maps').before(`<div id="slider"></div>`);
         addSlider(); // Наши специальные предложения
     }
 
@@ -34,12 +35,15 @@ function urlParser()
         console.log('OK=/contants');
 
         // Слайдер
-        $('.custom-footer').before(`<div id="slider"></div>`);
+        $('#maps').before(`<div id="slider"></div>`);
         addSlider(); // Наши специальные предложения
-
-        // Карта
-        $('#slider').before(`<div id="maps"></div>`);
     }
+}
+
+// Карта
+function addMap()
+{
+    $('.custom-footer').before(`<div id="maps"></div>`);
 }
 
 
