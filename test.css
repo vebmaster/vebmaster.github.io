@@ -157,13 +157,12 @@ ul.footerlist li  {
 
 /* Главная страница */
 @media (min-width: 768px) and (min-height: 530px) {
-    .home-page .first-page {
+    __.home-page .first-page {
         min-height: 100vh;
         height: 100vh;
     }
 
     .home-page #lpHeaderBlock > img {
-
     }
 }
 
