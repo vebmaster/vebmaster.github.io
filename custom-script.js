@@ -238,6 +238,8 @@ function customFooter()
 
 function customMain()
 {
+    $('body').addClass('home-page');
+
     // $('.first-page form').each(function () {
     //     if (!$(this).parent().hasClass('wrapForm-main'))
     //         $(this).wrap('<div class="wrapForm-main"></div>');
