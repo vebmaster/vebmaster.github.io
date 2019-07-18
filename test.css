@@ -156,10 +156,13 @@ ul.footerlist li  {
 
 
 /* Главная страница */
-.first-page {
-    min-height: 100vh;
-    height: 100vh;
+@media (min-width: 768px) and (min-height: 800px) {
+    .first-page {
+        min-height: 100vh;
+        height: 100vh;
+    }
 }
+
 /*
 .wrapForm-main {
     max-width: 500px;
