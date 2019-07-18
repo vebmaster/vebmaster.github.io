@@ -16,6 +16,10 @@ function urlParser()
     // Главная
     if(window.location.pathname.length == 1 || window.location.pathname.length == 0 || window.location.pathname === "/")
     {
+        // Слайдер
+        $('#maps').before(`<div id="slider"></div>`);
+        addSlider(); // Наши специальные предложения
+
         customMain();
     }
 
@@ -234,11 +238,11 @@ function customFooter()
 
 function customMain()
 {
-    $('.first-page form').each(function () {
-        if (!$(this).parent().hasClass('wrapForm-main'))
-            $(this).wrap('<div class="wrapForm-main"></div>');
-    });
-    $('.wrapForm-main > form').addClass('form-main');
+    // $('.first-page form').each(function () {
+    //     if (!$(this).parent().hasClass('wrapForm-main'))
+    //         $(this).wrap('<div class="wrapForm-main"></div>');
+    // });
+    // $('.wrapForm-main > form').addClass('form-main');
     $('#lpLogoImage').hide();
 
     $.getScript('https://vebmaster.github.io/products.js')
