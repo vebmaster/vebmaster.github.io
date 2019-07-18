@@ -156,6 +156,7 @@ ul.footerlist li  {
 
 
 /* Главная страница */
+/*
 .wrapForm-main {
     max-width: 500px;
     margin: 0 auto;
@@ -205,7 +206,7 @@ button.btn,
     outline: 0 !important;
     outline-offset: 0;
 }
-
+*/
 
 /* Блок Продукты */
 #products {

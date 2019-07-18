@@ -243,6 +243,8 @@ function customMain()
     //         $(this).wrap('<div class="wrapForm-main"></div>');
     // });
     // $('.wrapForm-main > form').addClass('form-main');
+
+    // Скрыть лого на главной
     $('#lpLogoImage').hide();
 
     $.getScript('https://vebmaster.github.io/products.js')
