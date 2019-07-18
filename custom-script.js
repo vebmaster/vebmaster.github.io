@@ -2,27 +2,35 @@ jQuery(document).ready(function($)
 {
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
 
-    urlParser();
+    customHeader(); // Везде
+    addMenu(); // Везде
+    customFooter(); // Везде
 
-    customHeader();
-    addMenu();
-    customFooter();
-    addMap();
-    addSlider();
-    customMain();
+    urlParser(); // Блоки в зависимости от URL страницы
 });
 
 
 function urlParser()
 {
+    // Главная
+    if(window.location.pathname.length == 1 || window.location.pathname.length == 0 || window.location.pathname === "/")
+    {
+        customMain();
+    }
+
+    // /about
     if (window.location.href.indexOf("/about") > -1)
     {
         console.log('OK=/about');
+        addSlider(); // Наши специальные предложения
     }
 
+    // /contants
     if (window.location.href.indexOf("/contants") > -1)
     {
         console.log('OK=/contants');
+        addSlider(); // Наши специальные предложения
+        addMap();
     }
 }
 
@@ -223,27 +231,25 @@ function customFooter()
 
 function customMain()
 {
-    if(window.location.pathname.length == 1 || window.location.pathname.length == 0 || window.location.pathname === "/") {
-        $('.first-page form').each(function () {
-            if (!$(this).parent().hasClass('wrapForm-main'))
-                $(this).wrap('<div class="wrapForm-main"></div>');
-        });
-        $('.wrapForm-main > form').addClass('form-main');
-        $('#lpLogoImage').hide();
+    $('.first-page form').each(function () {
+        if (!$(this).parent().hasClass('wrapForm-main'))
+            $(this).wrap('<div class="wrapForm-main"></div>');
+    });
+    $('.wrapForm-main > form').addClass('form-main');
+    $('#lpLogoImage').hide();
 
-        $.getScript('https://vebmaster.github.io/products.js')
-        .then(
-            function(){
-                waitForElement("#promotion", function () {
-                    //console.log('OK #promotion');
-                    addProducts();
-                }, 20);
-            },
-            function(){
-                console.log('products.js not found');
-                return $.Deferred();
-            }
-        )
-    }
+    $.getScript('https://vebmaster.github.io/products.js')
+    .then(
+        function(){
+            waitForElement("#promotion", function () {
+                //console.log('OK #promotion');
+                addProducts();
+            }, 20);
+        },
+        function(){
+            console.log('products.js not found');
+            return $.Deferred();
+        }
+    )
 }
 // customMain()
