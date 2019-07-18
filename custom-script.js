@@ -219,7 +219,7 @@ function customMain()
         .then(
             function(){
                 waitForElement("#promotion", function () {
-                    console.log('OK #promotion');
+                    //console.log('OK #promotion');
                     addProducts();
                 }, 20);
             },

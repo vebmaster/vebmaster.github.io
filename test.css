@@ -231,3 +231,9 @@ __#userBlockId587523 {
 __#userBlockId587523 #lpFormModalButtonText587523 {
     display: none;
 }
+
+.block-txt06 .item .text,
+.block-txt07 .item .text {
+    font-size: 16px;
+    line-height: 1.4;
+}
