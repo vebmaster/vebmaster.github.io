@@ -2,6 +2,8 @@ jQuery(document).ready(function($)
 {
     $("body").append("<link id='scriptCustom' rel='stylesheet' href='https://vebmaster.github.io/test.css?nocache' type='text/css'>");
 
+    urlParser();
+
     customHeader();
     addMenu();
     customFooter();
@@ -9,6 +11,20 @@ jQuery(document).ready(function($)
     addSlider();
     customMain();
 });
+
+
+function urlParser()
+{
+    if (window.location.href.indexOf("/about") > -1)
+    {
+        console.log('OK=/about');
+    }
+
+    if (window.location.href.indexOf("/contants") > -1)
+    {
+        console.log('OK=/contants');
+    }
+}
 
 
 function customHeader()
