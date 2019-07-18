@@ -156,6 +156,10 @@ ul.footerlist li  {
 
 
 /* Главная страница */
+.first-page {
+    min-height: 100%;
+    height: 100%;
+}
 /*
 .wrapForm-main {
     max-width: 500px;
