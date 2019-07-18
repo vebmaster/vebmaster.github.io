@@ -157,7 +157,7 @@ ul.footerlist li  {
 
 /* Главная страница */
 @media (min-width: 768px) and (min-height: 530px) {
-    .first-page {
+    #mainSiteBody .first-page {
         min-height: 100vh;
         height: 100vh;
     }
