@@ -22,6 +22,9 @@ function urlParser()
     if (window.location.href.indexOf("/about") > -1)
     {
         console.log('OK=/about');
+
+        // Слайдер
+        $('.custom-footer').before(`<div id="slider"></div>`);
         addSlider(); // Наши специальные предложения
     }
 
@@ -29,8 +32,13 @@ function urlParser()
     if (window.location.href.indexOf("/contants") > -1)
     {
         console.log('OK=/contants');
+
+        // Слайдер
+        $('.custom-footer').before(`<div id="slider"></div>`);
         addSlider(); // Наши специальные предложения
-        addMap();
+
+        // Карта
+        $('#slider').before(`<div id="maps"></div>`);
     }
 }
 
@@ -182,15 +190,6 @@ function addMenu()
     `);
 }
 // addMenu()
-
-
-function addMap()
-{
-    $('.custom-footer').before(`
-        <div id="maps"></div>
-    `);
-}
-// addMap()
 
 
 function addSlider()

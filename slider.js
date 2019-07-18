@@ -1,6 +1,7 @@
 jQuery(document).ready(function($)
 {
-    $('#maps').before(`
+    //$('#maps').before(`
+    $('#slider').append(`
         <div id="promotion" style="width: 100%; margin: 0px 0px 0px 0px;">
             <div class="workspace">
                 <div class="pro">
