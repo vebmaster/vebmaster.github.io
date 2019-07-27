@@ -110,9 +110,7 @@ function addProducts()
         <div id="product_3">
             <div style="padding: 36px 36px 36px 36px;">
 
-                <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">MSD Evolution</span><br><br>
-                    Специальное предложение!<br>
-                    Только до 18.02.2019 г.</div>
+                <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">MSD Evolution</span></div>
 
                 <a href="http://xn----otbbferaebb2agi0a.xn--p1ai/specialnye-predlozheniya/msd-evolution/">
                     <div class="pro_image" style="background: url(https://vebmaster.github.io/images/ceilings_evolution.jpg) center no-repeat; background-size: contain;"></div>
@@ -140,7 +138,7 @@ function addProducts()
                 </div>
                 <div class="in_list">
                     <div style="position: absolute; top: 9px; font-size: 11px; color: #c0c0c0;">Сертификат</div>
-                    <a href="/design/msd-evolution.jpg" rel="group" style="color: #d57787;">Гигиенический</a>
+                    Гигиенический
                 </div>
                 <div class="in_list">
                     <div style="position: absolute; top: 9px; font-size: 11px; color: #c0c0c0;">Гарантия</div>
