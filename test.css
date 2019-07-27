@@ -223,7 +223,7 @@ button.btn,
 #products .pro_image {width: 300px; height: 260px; margin: 0px auto 0px auto;}
 #product_1 {width: 350px; border-radius: 16px; background: #FFF; float: left; box-shadow: 0px 0px 22px -8px #23366e;}
 #product_2 {width: 350px; border-radius: 16px; background: #FFF; float: right; box-shadow: 0px 0px 22px -8px #23366e;}
-#product_3 {width: 350px; border-radius: 16px; background: #FFF; box-shadow: 0px 0px 22px -8px #23366e; position: absolute; top: -50px; left: 430px; z-index: 99;}
+#product_3 {width: 350px; border-radius: 16px; background: #FFF; box-shadow: 0px 0px 22px -8px #23366e; position: absolute; top: -50px; left: 320px; z-index: 99;}
 #products .first_list {padding: 6px 24px 6px 24px; border-bottom: 1px solid #eeeeee; border-top: 1px solid #eeeeee; text-align: center; position: relative;}
 #products .in_list {padding: 6px 24px 6px 24px; border-bottom: 1px solid #eeeeee; text-align: center; position: relative;}
 #products .spec_but_1 {width: 160px; margin: 6px 0px 0px 0px; float: left; text-align: center; background: #FFF; border: 2px solid #acacac; font-weight: 400; color: #acacac; font-size: 22px; border-radius: 200px; padding: 14px 0px 14px 0px; cursor: pointer;}
