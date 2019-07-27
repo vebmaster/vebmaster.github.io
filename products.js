@@ -152,7 +152,8 @@ function addProducts()
                     <b style="color: #3b3b3b; font-size: 24px; font-weight: 900;">Новая цена: 199 руб./м<sup>2</sup></b>
                 </div>
 
-                <div class="spec_but_2" data-toggle="modal" data-target="#lpFormOrderModal587523">
+                <div class="DEL_spec_but_2" data-toggle="modal" data-target="#lpFormOrderModal587523"
+                 style="width: 160px; margin: 6px auto 0px auto; text-align: center; background: #d57787; border-bottom: 4px solid #c6576a; font-weight: 400; color: #FFF; font-size: 22px; border-radius: 200px; padding: 14px 0px 14px 0px; cursor: pointer;">
                     Заказать
                 </div>
 
