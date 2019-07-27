@@ -112,9 +112,7 @@ function addProducts()
 
                 <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">MSD Evolution</span></div>
 
-                <a href="http://xn----otbbferaebb2agi0a.xn--p1ai/specialnye-predlozheniya/msd-evolution/">
-                    <div class="pro_image" style="background: url(https://vebmaster.github.io/images/ceilings_evolution.jpg) center no-repeat; background-size: contain;"></div>
-                </a>
+                <div class="pro_image" style="background: url(https://vebmaster.github.io/images/ceilings_evolution.jpg) center no-repeat; background-size: contain;"></div>
 
                 <div class="first_list">
                     <div style="position: absolute; top: 9px; font-size: 11px; color: #c0c0c0;">Производитель</div>
