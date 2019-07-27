@@ -236,6 +236,7 @@ function customFooter()
 // customFooter()
 
 
+// Изменения только для Главной
 function customMain()
 {
     $('body').addClass('home-page');

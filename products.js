@@ -8,7 +8,7 @@ function addProducts()
         <div id="product_1">
             <div style="padding: 36px 36px 36px 36px;">
 
-                <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">Sofito Classic</span></div>
+                <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">MSD Classic</span></div>
 
                 <div class="pro_image" style="background: url(https://vebmaster.github.io/images/ceilings_classic.jpg) center no-repeat; background-size: contain;"></div>
 
@@ -42,8 +42,8 @@ function addProducts()
                 </div>
 
                 <div style="padding: 36px 24px 12px 24px; text-align: center;">
-                    <s>Старая цена: 200 руб.</s><br>
-                    <b style="color: #3b3b3b; font-size: 24px; font-weight: 900;">Новая цена: 100 руб./м<sup>2</sup></b>
+                    <s>Старая цена: 150 руб.</s><br>
+                    <b style="color: #3b3b3b; font-size: 24px; font-weight: 900;">Новая цена: 99 руб./м<sup>2</sup></b>
                 </div>
 
 
@@ -59,7 +59,7 @@ function addProducts()
         <div id="product_2">
             <div style="padding: 36px 36px 36px 36px;">
 
-                <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">Sofito Premium</span></div>
+                <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">PONGS Premium</span></div>
 
                 <div class="pro_image" style="background: url(https://vebmaster.github.io/images/ceilings_premium.jpg) center no-repeat; background-size: contain;"></div>
 
@@ -93,8 +93,8 @@ function addProducts()
                 </div>
 
                 <div style="padding: 36px 24px 12px 24px; text-align: center;">
-                    <s>Старая цена: 1000 руб.</s><br>
-                    <b style="color: #3b3b3b; font-size: 24px; font-weight: 900;">Новая цена: 500 руб./м<sup>2</sup></b>
+                    <s>Старая цена: 500 руб.</s><br>
+                    <b style="color: #3b3b3b; font-size: 24px; font-weight: 900;">Новая цена: 399 руб./м<sup>2</sup></b>
                 </div>
 
 
@@ -110,7 +110,7 @@ function addProducts()
         <div id="product_3">
             <div style="padding: 36px 36px 36px 36px;">
 
-                <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">Sofito Evolution</span><br><br>
+                <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">MSD Evolution</span><br><br>
                     Специальное предложение!<br>
                     Только до 18.02.2019 г.</div>
 
@@ -148,22 +148,13 @@ function addProducts()
                 </div>
 
                 <div style="padding: 36px 24px 12px 24px; text-align: center;">
-                    <s>Старая цена: 600 руб.</s><br>
-                    <b style="color: #3b3b3b; font-size: 24px; font-weight: 900;">Новая цена: 300 руб./м<sup>2</sup></b>
+                    <s>Старая цена: 300 руб.</s><br>
+                    <b style="color: #3b3b3b; font-size: 24px; font-weight: 900;">Новая цена: 199 руб./м<sup>2</sup></b>
                 </div>
-
-                <div class="null"></div>
-
-
-
-                <a href="#test" style="text-decoration: none;">
-                    <div class="spec_but_1">Подробнее</div>
-                </a>
 
                 <div class="spec_but_2" data-toggle="modal" data-target="#lpFormOrderModal587523">
                     Заказать
                 </div>
-
 
                 <div class="null"></div>
             </div>
