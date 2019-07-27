@@ -258,7 +258,7 @@ __#lpFormOrderModal587523 .modal-content .modal-body {
     border: 2px solid #d57787;
     color: #242424;
     text-align: center;
-    width: 170px;
+    __width: 170px;
     font-size: 22px;
     border-radius: 220px;
     __padding: 10px 0px 14px 0px;
@@ -270,7 +270,7 @@ __#lpFormOrderModal587523 .modal-content .modal-body {
     background: #d57787;
     color: #FFF;
     text-align: center;
-    width: 170px;
+    __width: 170px;
     font-size: 22px;
     border-radius: 220px;
     __padding: 10px 0px 14px 0px;
