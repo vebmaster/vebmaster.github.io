@@ -244,3 +244,30 @@ __#userBlockId587523 #lpFormModalButtonText587523 {
     font-size: 16px;
     line-height: 1.4;
 }
+
+/*
+Главная - Модальное окно с формой
+ */
+#lpFormOrderModal587523 input[type="text"] {
+    border: 2px solid #d57787;
+    color: #242424;
+    text-align: center;
+    width: 170px;
+    font-size: 22px;
+    border-radius: 220px;
+    padding: 10px 0px 14px 0px;
+    float: none;
+    margin: 0px 22px 18px 22px;
+}
+#lpFormOrderModal587523 .btn {
+    border: 2px solid #d57787;
+    background: #d57787;
+    color: #FFF;
+    text-align: center;
+    width: 170px;
+    font-size: 22px;
+    border-radius: 220px;
+    padding: 10px 0px 14px 0px;
+    margin: 0px auto 0px auto;
+    cursor: pointer;
+}
