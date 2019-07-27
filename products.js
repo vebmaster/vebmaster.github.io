@@ -6,7 +6,7 @@ function addProducts()
     <div class="workspace">
 
         <div id="product_1">
-            <div style="padding: 36px 36px 36px 36px;">
+            <div style="padding: 10px 5px 10px 5px;">
 
                 <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">MSD Classic</span></div>
 
@@ -57,7 +57,7 @@ function addProducts()
         </div>
 
         <div id="product_2">
-            <div style="padding: 36px 36px 36px 36px;">
+            <div style="padding: 10px 5px 10px 5px;">
 
                 <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">PONGS Premium</span></div>
 
@@ -108,7 +108,7 @@ function addProducts()
 
 
         <div id="product_3">
-            <div style="padding: 36px 36px 36px 36px;">
+            <div style="padding: 10px 5px 10px 5px;">
 
                 <div style="color: #3b3b3b; font-size: 24px; font-weight: 900; text-align: center;"><span style="color: #d57787;">MSD Evolution</span></div>
 
